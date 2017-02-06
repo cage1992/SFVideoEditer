@@ -83,7 +83,7 @@ public func ShowLoading() {
     if loadingCover == nil  {
         loadingCover = UIView.init(frame: (UIApplication.shared.keyWindow?.bounds)!)
         loadingCover?.backgroundColor = .black
-        loadingCover?.alpha = 0.7
+        loadingCover?.alpha = 0.9
         UIApplication.shared.keyWindow?.addSubview(loadingCover!)
     }
     
