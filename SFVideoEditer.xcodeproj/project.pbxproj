@@ -1,0 +1,1193 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F14E76B91E0914340028D9B8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E76B81E0914340028D9B8 /* Config.swift */; };
+		F1F776091DEE82CE00B47C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F776071DEE82CE00B47C12 /* Main.storyboard */; };
+		F1F7760B1DEE82CE00B47C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7760A1DEE82CE00B47C12 /* Assets.xcassets */; };
+		F1F7760E1DEE82CE00B47C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F7760C1DEE82CE00B47C12 /* LaunchScreen.storyboard */; };
+		F1F7761A1DEE845000B47C12 /* EditVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F776181DEE845000B47C12 /* EditVideoViewController.swift */; };
+		F1F7761B1DEE845000B47C12 /* TakeVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F776191DEE845000B47C12 /* TakeVideoViewController.swift */; };
+		F1F7761D1DEE847200B47C12 /* SFVideoSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7761C1DEE847200B47C12 /* SFVideoSlider.swift */; };
+		F1F776FD1DEE93CD00B47C12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F7766A1DEE93CD00B47C12 /* Info.plist */; };
+		F1F777011DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776751DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m */; };
+		F1F777021DEE93CD00B47C12 /* SCAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776771DEE93CD00B47C12 /* SCAssetExportSession.m */; };
+		F1F777031DEE93CD00B47C12 /* SCAudioConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776791DEE93CD00B47C12 /* SCAudioConfiguration.m */; };
+		F1F777041DEE93CD00B47C12 /* SCAudioTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7767B1DEE93CD00B47C12 /* SCAudioTools.m */; };
+		F1F777051DEE93CD00B47C12 /* SCContext.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7767E1DEE93CD00B47C12 /* SCContext.m */; };
+		F1F777061DEE93CD00B47C12 /* SCFilter+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776801DEE93CD00B47C12 /* SCFilter+UIImage.m */; };
+		F1F777071DEE93CD00B47C12 /* SCFilter+VideoComposition.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776821DEE93CD00B47C12 /* SCFilter+VideoComposition.m */; };
+		F1F777081DEE93CD00B47C12 /* SCFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776841DEE93CD00B47C12 /* SCFilter.m */; };
+		F1F777091DEE93CD00B47C12 /* SCFilterAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776861DEE93CD00B47C12 /* SCFilterAnimation.m */; };
+		F1F7770A1DEE93CD00B47C12 /* SCFilterImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776881DEE93CD00B47C12 /* SCFilterImageView.m */; };
+		F1F7770B1DEE93CD00B47C12 /* SCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7768A1DEE93CD00B47C12 /* SCImageView.m */; };
+		F1F7770C1DEE93CD00B47C12 /* SCIOPixelBuffers.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7768C1DEE93CD00B47C12 /* SCIOPixelBuffers.m */; };
+		F1F7770D1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7768E1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m */; };
+		F1F7770E1DEE93CD00B47C12 /* SCPhotoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776901DEE93CD00B47C12 /* SCPhotoConfiguration.m */; };
+		F1F7770F1DEE93CD00B47C12 /* SCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776921DEE93CD00B47C12 /* SCPlayer.m */; };
+		F1F777101DEE93CD00B47C12 /* SCProcessingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776941DEE93CD00B47C12 /* SCProcessingQueue.m */; };
+		F1F777111DEE93CD00B47C12 /* SCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776961DEE93CD00B47C12 /* SCRecorder.m */; };
+		F1F777121DEE93CD00B47C12 /* SCRecorderFocusTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776991DEE93CD00B47C12 /* SCRecorderFocusTargetView.m */; };
+		F1F777131DEE93CD00B47C12 /* SCRecorderTools.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7769C1DEE93CD00B47C12 /* SCRecorderTools.m */; };
+		F1F777141DEE93CD00B47C12 /* SCRecorderToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7769E1DEE93CD00B47C12 /* SCRecorderToolsView.m */; };
+		F1F777151DEE93CD00B47C12 /* SCRecordSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776A01DEE93CD00B47C12 /* SCRecordSession.m */; };
+		F1F777161DEE93CD00B47C12 /* SCRecordSessionSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776A31DEE93CD00B47C12 /* SCRecordSessionSegment.m */; };
+		F1F777171DEE93CD00B47C12 /* SCSampleBufferHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776A51DEE93CD00B47C12 /* SCSampleBufferHolder.m */; };
+		F1F777181DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776A71DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m */; };
+		F1F777191DEE93CD00B47C12 /* SCSwipeableFilterView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776A91DEE93CD00B47C12 /* SCSwipeableFilterView.m */; };
+		F1F7771A1DEE93CD00B47C12 /* SCVideoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776AB1DEE93CD00B47C12 /* SCVideoConfiguration.m */; };
+		F1F7771B1DEE93CD00B47C12 /* SCVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776AD1DEE93CD00B47C12 /* SCVideoPlayerView.m */; };
+		F1F7771C1DEE93CD00B47C12 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776AF1DEE93CD00B47C12 /* SCWeakSelectorTarget.m */; };
+		F1F7771D1DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776B11DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m */; };
+		F1F7771E1DEE93CD00B47C12 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F776B31DEE93CD00B47C12 /* SnapKit.framework */; };
+		F1F777401DEE93CD00B47C12 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */; };
+		F1F777411DEE93CD00B47C12 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */; };
+		F1F777461DEE9B1A00B47C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F777431DEE9B1A00B47C12 /* AppDelegate.swift */; };
+		F1F777471DEE9B1A00B47C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F777451DEE9B1A00B47C12 /* ViewController.swift */; };
+		F1F7774E1DEEA02800B47C12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */; };
+		F1F777501DEEA05C00B47C12 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7774F1DEEA05C00B47C12 /* MobileCoreServices.framework */; };
+		F1F777961DEEA19500B47C12 /* NSArray+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */; };
+		F1F777971DEEA19500B47C12 /* NSDate+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */; };
+		F1F777981DEEA19500B47C12 /* NSDictionary+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */; };
+		F1F777991DEEA19500B47C12 /* NSMutableArray+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */; };
+		F1F7779A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */; };
+		F1F7779B1DEEA19500B47C12 /* NSNumber+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */; };
+		F1F7779C1DEEA19500B47C12 /* NSObject+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */; };
+		F1F7779D1DEEA19500B47C12 /* NSString+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777611DEEA19500B47C12 /* NSString+Sankit.m */; };
+		F1F7779E1DEEA19500B47C12 /* NSTimer+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */; };
+		F1F7779F1DEEA19500B47C12 /* NSUserDefaults+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */; };
+		F1F777A01DEEA19500B47C12 /* SanIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777681DEEA19500B47C12 /* SanIcon.m */; };
+		F1F777A11DEEA19500B47C12 /* sanicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1F777691DEEA19500B47C12 /* sanicon.ttf */; };
+		F1F777A21DEEA19500B47C12 /* SankitFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7776C1DEEA19500B47C12 /* SankitFactory.m */; };
+		F1F777A41DEEA19500B47C12 /* SFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777701DEEA19500B47C12 /* SFCache.m */; };
+		F1F777A51DEEA19500B47C12 /* SFKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */; };
+		F1F777A61DEEA19500B47C12 /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777741DEEA19500B47C12 /* SFLabel.m */; };
+		F1F777A81DEEA19500B47C12 /* SFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777791DEEA19500B47C12 /* SFTextField.m */; };
+		F1F777A91DEEA19500B47C12 /* SFTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */; };
+		F1F777AA1DEEA19500B47C12 /* SFUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */; };
+		F1F777AB1DEEA19500B47C12 /* SFUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */; };
+		F1F777AC1DEEA19500B47C12 /* SFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777811DEEA19500B47C12 /* SFUtility.m */; };
+		F1F777AD1DEEA19500B47C12 /* UIAlertController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */; };
+		F1F777AE1DEEA19500B47C12 /* UIApplication+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */; };
+		F1F777AF1DEEA19500B47C12 /* UIButton+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */; };
+		F1F777B01DEEA19500B47C12 /* UIColor+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */; };
+		F1F777B11DEEA19500B47C12 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */; };
+		F1F777B21DEEA19500B47C12 /* UIImage+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */; };
+		F1F777B31DEEA19500B47C12 /* UINavigationController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */; };
+		F1F777B41DEEA19500B47C12 /* UIScrollView+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */; };
+		F1F777B51DEEA19500B47C12 /* UIView+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777931DEEA19500B47C12 /* UIView+Sankit.m */; };
+		F1F777B61DEEA19500B47C12 /* UIViewController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */; };
+		F1F777E51DEEA43B00B47C12 /* OpinionzAlertIconHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777B91DEEA43B00B47C12 /* OpinionzAlertIconHeart.png */; };
+		F1F777E61DEEA43B00B47C12 /* OpinionzAlertIconInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BA1DEEA43B00B47C12 /* OpinionzAlertIconInfo.png */; };
+		F1F777E71DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BB1DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png */; };
+		F1F777E81DEEA43B00B47C12 /* OpinionzAlertIconStar.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BC1DEEA43B00B47C12 /* OpinionzAlertIconStar.png */; };
+		F1F777E91DEEA43B00B47C12 /* OpinionzAlertIconSuccess.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BD1DEEA43B00B47C12 /* OpinionzAlertIconSuccess.png */; };
+		F1F777EA1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BE1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png */; };
+		F1F777EB1DEEA43B00B47C12 /* BlindForLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C01DEEA43B00B47C12 /* BlindForLove.mp3 */; };
+		F1F777EC1DEEA43B00B47C12 /* blue one love.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C11DEEA43B00B47C12 /* blue one love.mp3 */; };
+		F1F777ED1DEEA43B00B47C12 /* Bubbly.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C21DEEA43B00B47C12 /* Bubbly.mp3 */; };
+		F1F777EE1DEEA43B00B47C12 /* Drums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C31DEEA43B00B47C12 /* Drums.mp3 */; };
+		F1F777EF1DEEA43B00B47C12 /* Nothing in the world.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C41DEEA43B00B47C12 /* Nothing in the world.mp3 */; };
+		F1F777F01DEEA43B00B47C12 /* 云水禅心.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C51DEEA43B00B47C12 /* 云水禅心.mp3 */; };
+		F1F777F11DEEA43B00B47C12 /* 优雅美声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C61DEEA43B00B47C12 /* 优雅美声.mp3 */; };
+		F1F777F21DEEA43B00B47C12 /* 像梦一样自由.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C71DEEA43B00B47C12 /* 像梦一样自由.mp3 */; };
+		F1F777F31DEEA43B00B47C12 /* 净水轮回.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C81DEEA43B00B47C12 /* 净水轮回.mp3 */; };
+		F1F777F41DEEA43B00B47C12 /* 午后咖啡.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777C91DEEA43B00B47C12 /* 午后咖啡.mp3 */; };
+		F1F777F51DEEA43B00B47C12 /* 古琴修禅.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CA1DEEA43B00B47C12 /* 古琴修禅.mp3 */; };
+		F1F777F61DEEA43B00B47C12 /* 只在心里.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CB1DEEA43B00B47C12 /* 只在心里.mp3 */; };
+		F1F777F71DEEA43B00B47C12 /* 史诗前奏.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CC1DEEA43B00B47C12 /* 史诗前奏.mp3 */; };
+		F1F777F81DEEA43B00B47C12 /* 天籁琴绕.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CD1DEEA43B00B47C12 /* 天籁琴绕.mp3 */; };
+		F1F777F91DEEA43B00B47C12 /* 幽玄禅音.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CE1DEEA43B00B47C12 /* 幽玄禅音.mp3 */; };
+		F1F777FA1DEEA43B00B47C12 /* 恢弘大气.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777CF1DEEA43B00B47C12 /* 恢弘大气.mp3 */; };
+		F1F777FB1DEEA43B00B47C12 /* 悦动节奏.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D01DEEA43B00B47C12 /* 悦动节奏.mp3 */; };
+		F1F777FC1DEEA43B00B47C12 /* 惬意时光.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D11DEEA43B00B47C12 /* 惬意时光.mp3 */; };
+		F1F777FD1DEEA43B00B47C12 /* 愉悦清晨.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D21DEEA43B00B47C12 /* 愉悦清晨.mp3 */; };
+		F1F777FE1DEEA43B00B47C12 /* 慈光禅心.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D31DEEA43B00B47C12 /* 慈光禅心.mp3 */; };
+		F1F777FF1DEEA43B00B47C12 /* 欢快节奏1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D41DEEA43B00B47C12 /* 欢快节奏1.mp3 */; };
+		F1F778001DEEA43B00B47C12 /* 法国浪漫.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D51DEEA43B00B47C12 /* 法国浪漫.mp3 */; };
+		F1F778011DEEA43B00B47C12 /* 玄妙过耳.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D61DEEA43B00B47C12 /* 玄妙过耳.mp3 */; };
+		F1F778021DEEA43B00B47C12 /* 琴声破舱.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D71DEEA43B00B47C12 /* 琴声破舱.mp3 */; };
+		F1F778031DEEA43B00B47C12 /* 男人好难..mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D81DEEA43B00B47C12 /* 男人好难..mp3 */; };
+		F1F778041DEEA43B00B47C12 /* 男人好难.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777D91DEEA43B00B47C12 /* 男人好难.mp3 */; };
+		F1F778051DEEA43B00B47C12 /* 禅静思语.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DA1DEEA43B00B47C12 /* 禅静思语.mp3 */; };
+		F1F778061DEEA43B00B47C12 /* 禅音静心.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DB1DEEA43B00B47C12 /* 禅音静心.mp3 */; };
+		F1F778071DEEA43B00B47C12 /* 舒缓自然.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DC1DEEA43B00B47C12 /* 舒缓自然.mp3 */; };
+		F1F778081DEEA43B00B47C12 /* 节奏POP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DD1DEEA43B00B47C12 /* 节奏POP.mp3 */; };
+		F1F778091DEEA43B00B47C12 /* 花开见佛.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DE1DEEA43B00B47C12 /* 花开见佛.mp3 */; };
+		F1F7780A1DEEA43B00B47C12 /* 贝加尔湖畔.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777DF1DEEA43B00B47C12 /* 贝加尔湖畔.mp3 */; };
+		F1F7780B1DEEA43B00B47C12 /* 走着走着就散了.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777E01DEEA43B00B47C12 /* 走着走着就散了.mp3 */; };
+		F1F7780C1DEEA43B00B47C12 /* 镜面湖声.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1F777E11DEEA43B00B47C12 /* 镜面湖声.mp3 */; };
+		F1F7780D1DEEA43B00B47C12 /* icon-check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777E31DEEA43B00B47C12 /* icon-check@2x.png */; };
+		F1F7780E1DEEA43B00B47C12 /* icon-checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777E41DEEA43B00B47C12 /* icon-checked@2x.png */; };
+		F1F778321DEEB9F200B47C12 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778101DEEB9F200B47C12 /* Constraint.swift */; };
+		F1F778331DEEB9F200B47C12 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778111DEEB9F200B47C12 /* ConstraintAttributes.swift */; };
+		F1F778341DEEB9F200B47C12 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778121DEEB9F200B47C12 /* ConstraintConfig.swift */; };
+		F1F778351DEEB9F200B47C12 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778131DEEB9F200B47C12 /* ConstraintConstantTarget.swift */; };
+		F1F778361DEEB9F200B47C12 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778141DEEB9F200B47C12 /* ConstraintDescription.swift */; };
+		F1F778371DEEB9F200B47C12 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778151DEEB9F200B47C12 /* ConstraintDSL.swift */; };
+		F1F778381DEEB9F200B47C12 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778161DEEB9F200B47C12 /* ConstraintInsets.swift */; };
+		F1F778391DEEB9F200B47C12 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778171DEEB9F200B47C12 /* ConstraintInsetTarget.swift */; };
+		F1F7783A1DEEB9F200B47C12 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778181DEEB9F200B47C12 /* ConstraintItem.swift */; };
+		F1F7783B1DEEB9F200B47C12 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778191DEEB9F200B47C12 /* ConstraintLayoutGuide+Extensions.swift */; };
+		F1F7783C1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781A1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift */; };
+		F1F7783D1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781B1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift */; };
+		F1F7783E1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781C1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift */; };
+		F1F7783F1DEEB9F300B47C12 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781D1DEEB9F200B47C12 /* ConstraintLayoutSupportDSL.swift */; };
+		F1F778401DEEB9F300B47C12 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781E1DEEB9F200B47C12 /* ConstraintMaker.swift */; };
+		F1F778411DEEB9F300B47C12 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7781F1DEEB9F200B47C12 /* ConstraintMakerEditable.swift */; };
+		F1F778421DEEB9F300B47C12 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778201DEEB9F200B47C12 /* ConstraintMakerExtendable.swift */; };
+		F1F778431DEEB9F300B47C12 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778211DEEB9F200B47C12 /* ConstraintMakerFinalizable.swift */; };
+		F1F778441DEEB9F300B47C12 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778221DEEB9F200B47C12 /* ConstraintMakerPriortizable.swift */; };
+		F1F778451DEEB9F300B47C12 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778231DEEB9F200B47C12 /* ConstraintMakerRelatable.swift */; };
+		F1F778461DEEB9F300B47C12 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778241DEEB9F200B47C12 /* ConstraintMultiplierTarget.swift */; };
+		F1F778471DEEB9F300B47C12 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778251DEEB9F200B47C12 /* ConstraintOffsetTarget.swift */; };
+		F1F778481DEEB9F300B47C12 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778261DEEB9F200B47C12 /* ConstraintPriorityTarget.swift */; };
+		F1F778491DEEB9F300B47C12 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778271DEEB9F200B47C12 /* ConstraintRelatableTarget.swift */; };
+		F1F7784A1DEEB9F300B47C12 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778281DEEB9F200B47C12 /* ConstraintRelation.swift */; };
+		F1F7784B1DEEB9F300B47C12 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778291DEEB9F200B47C12 /* ConstraintView+Extensions.swift */; };
+		F1F7784C1DEEB9F300B47C12 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7782A1DEEB9F200B47C12 /* ConstraintView.swift */; };
+		F1F7784D1DEEB9F300B47C12 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7782B1DEEB9F200B47C12 /* ConstraintViewDSL.swift */; };
+		F1F7784E1DEEB9F300B47C12 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7782C1DEEB9F200B47C12 /* Debugging.swift */; };
+		F1F7784F1DEEB9F300B47C12 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1F7782D1DEEB9F200B47C12 /* Info.plist */; };
+		F1F778501DEEB9F300B47C12 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7782E1DEEB9F200B47C12 /* LayoutConstraint.swift */; };
+		F1F778511DEEB9F300B47C12 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F7782F1DEEB9F200B47C12 /* LayoutConstraintItem.swift */; };
+		F1F778521DEEB9F300B47C12 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F778311DEEB9F200B47C12 /* UILayoutSupport+Extensions.swift */; };
+		F1F778541DEEC0B400B47C12 /* pub-video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F778531DEEC0B400B47C12 /* pub-video@2x.png */; };
+		F1F778561DEEC4FF00B47C12 /* icn_play_big.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F778551DEEC4FF00B47C12 /* icn_play_big.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F14E76B81E0914340028D9B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F1F776001DEE82CE00B47C12 /* SFVideoEditer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFVideoEditer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1F776081DEE82CE00B47C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1F7760A1DEE82CE00B47C12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1F7760D1DEE82CE00B47C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1F7760F1DEE82CE00B47C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F776181DEE845000B47C12 /* EditVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditVideoViewController.swift; sourceTree = "<group>"; };
+		F1F776191DEE845000B47C12 /* TakeVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeVideoViewController.swift; sourceTree = "<group>"; };
+		F1F7761C1DEE847200B47C12 /* SFVideoSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVideoSlider.swift; sourceTree = "<group>"; };
+		F1F7766A1DEE93CD00B47C12 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F7766B1DEE93CD00B47C12 /* SCRecorder.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SCRecorder.modulemap; sourceTree = "<group>"; };
+		F1F7766C1DEE93CD00B47C12 /* SCRecorderFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderFramework.h; sourceTree = "<group>"; };
+		F1F776741DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		F1F776751DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		F1F776761DEE93CD00B47C12 /* SCAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAssetExportSession.h; sourceTree = "<group>"; };
+		F1F776771DEE93CD00B47C12 /* SCAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAssetExportSession.m; sourceTree = "<group>"; };
+		F1F776781DEE93CD00B47C12 /* SCAudioConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAudioConfiguration.h; sourceTree = "<group>"; };
+		F1F776791DEE93CD00B47C12 /* SCAudioConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAudioConfiguration.m; sourceTree = "<group>"; };
+		F1F7767A1DEE93CD00B47C12 /* SCAudioTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAudioTools.h; sourceTree = "<group>"; };
+		F1F7767B1DEE93CD00B47C12 /* SCAudioTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCAudioTools.m; sourceTree = "<group>"; };
+		F1F7767C1DEE93CD00B47C12 /* SCAudioVideoRecorder-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCAudioVideoRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		F1F7767D1DEE93CD00B47C12 /* SCContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCContext.h; sourceTree = "<group>"; };
+		F1F7767E1DEE93CD00B47C12 /* SCContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCContext.m; sourceTree = "<group>"; };
+		F1F7767F1DEE93CD00B47C12 /* SCFilter+UIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCFilter+UIImage.h"; sourceTree = "<group>"; };
+		F1F776801DEE93CD00B47C12 /* SCFilter+UIImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCFilter+UIImage.m"; sourceTree = "<group>"; };
+		F1F776811DEE93CD00B47C12 /* SCFilter+VideoComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SCFilter+VideoComposition.h"; sourceTree = "<group>"; };
+		F1F776821DEE93CD00B47C12 /* SCFilter+VideoComposition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SCFilter+VideoComposition.m"; sourceTree = "<group>"; };
+		F1F776831DEE93CD00B47C12 /* SCFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilter.h; sourceTree = "<group>"; };
+		F1F776841DEE93CD00B47C12 /* SCFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilter.m; sourceTree = "<group>"; };
+		F1F776851DEE93CD00B47C12 /* SCFilterAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterAnimation.h; sourceTree = "<group>"; };
+		F1F776861DEE93CD00B47C12 /* SCFilterAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterAnimation.m; sourceTree = "<group>"; };
+		F1F776871DEE93CD00B47C12 /* SCFilterImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFilterImageView.h; sourceTree = "<group>"; };
+		F1F776881DEE93CD00B47C12 /* SCFilterImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFilterImageView.m; sourceTree = "<group>"; };
+		F1F776891DEE93CD00B47C12 /* SCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageView.h; sourceTree = "<group>"; };
+		F1F7768A1DEE93CD00B47C12 /* SCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageView.m; sourceTree = "<group>"; };
+		F1F7768B1DEE93CD00B47C12 /* SCIOPixelBuffers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIOPixelBuffers.h; sourceTree = "<group>"; };
+		F1F7768C1DEE93CD00B47C12 /* SCIOPixelBuffers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIOPixelBuffers.m; sourceTree = "<group>"; };
+		F1F7768D1DEE93CD00B47C12 /* SCMediaTypeConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMediaTypeConfiguration.h; sourceTree = "<group>"; };
+		F1F7768E1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMediaTypeConfiguration.m; sourceTree = "<group>"; };
+		F1F7768F1DEE93CD00B47C12 /* SCPhotoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPhotoConfiguration.h; sourceTree = "<group>"; };
+		F1F776901DEE93CD00B47C12 /* SCPhotoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPhotoConfiguration.m; sourceTree = "<group>"; };
+		F1F776911DEE93CD00B47C12 /* SCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlayer.h; sourceTree = "<group>"; };
+		F1F776921DEE93CD00B47C12 /* SCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlayer.m; sourceTree = "<group>"; };
+		F1F776931DEE93CD00B47C12 /* SCProcessingQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCProcessingQueue.h; sourceTree = "<group>"; };
+		F1F776941DEE93CD00B47C12 /* SCProcessingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCProcessingQueue.m; sourceTree = "<group>"; };
+		F1F776951DEE93CD00B47C12 /* SCRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorder.h; sourceTree = "<group>"; };
+		F1F776961DEE93CD00B47C12 /* SCRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecorder.m; sourceTree = "<group>"; };
+		F1F776971DEE93CD00B47C12 /* SCRecorderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderDelegate.h; sourceTree = "<group>"; };
+		F1F776981DEE93CD00B47C12 /* SCRecorderFocusTargetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderFocusTargetView.h; sourceTree = "<group>"; };
+		F1F776991DEE93CD00B47C12 /* SCRecorderFocusTargetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecorderFocusTargetView.m; sourceTree = "<group>"; };
+		F1F7769A1DEE93CD00B47C12 /* SCRecorderHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderHeader.h; sourceTree = "<group>"; };
+		F1F7769B1DEE93CD00B47C12 /* SCRecorderTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderTools.h; sourceTree = "<group>"; };
+		F1F7769C1DEE93CD00B47C12 /* SCRecorderTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecorderTools.m; sourceTree = "<group>"; };
+		F1F7769D1DEE93CD00B47C12 /* SCRecorderToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecorderToolsView.h; sourceTree = "<group>"; };
+		F1F7769E1DEE93CD00B47C12 /* SCRecorderToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecorderToolsView.m; sourceTree = "<group>"; };
+		F1F7769F1DEE93CD00B47C12 /* SCRecordSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordSession.h; sourceTree = "<group>"; };
+		F1F776A01DEE93CD00B47C12 /* SCRecordSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordSession.m; sourceTree = "<group>"; };
+		F1F776A11DEE93CD00B47C12 /* SCRecordSession_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordSession_Internal.h; sourceTree = "<group>"; };
+		F1F776A21DEE93CD00B47C12 /* SCRecordSessionSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRecordSessionSegment.h; sourceTree = "<group>"; };
+		F1F776A31DEE93CD00B47C12 /* SCRecordSessionSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRecordSessionSegment.m; sourceTree = "<group>"; };
+		F1F776A41DEE93CD00B47C12 /* SCSampleBufferHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSampleBufferHolder.h; sourceTree = "<group>"; };
+		F1F776A51DEE93CD00B47C12 /* SCSampleBufferHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSampleBufferHolder.m; sourceTree = "<group>"; };
+		F1F776A61DEE93CD00B47C12 /* SCSaveToCameraRollOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSaveToCameraRollOperation.h; sourceTree = "<group>"; };
+		F1F776A71DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSaveToCameraRollOperation.m; sourceTree = "<group>"; };
+		F1F776A81DEE93CD00B47C12 /* SCSwipeableFilterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSwipeableFilterView.h; sourceTree = "<group>"; };
+		F1F776A91DEE93CD00B47C12 /* SCSwipeableFilterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSwipeableFilterView.m; sourceTree = "<group>"; };
+		F1F776AA1DEE93CD00B47C12 /* SCVideoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVideoConfiguration.h; sourceTree = "<group>"; };
+		F1F776AB1DEE93CD00B47C12 /* SCVideoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVideoConfiguration.m; sourceTree = "<group>"; };
+		F1F776AC1DEE93CD00B47C12 /* SCVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVideoPlayerView.h; sourceTree = "<group>"; };
+		F1F776AD1DEE93CD00B47C12 /* SCVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVideoPlayerView.m; sourceTree = "<group>"; };
+		F1F776AE1DEE93CD00B47C12 /* SCWeakSelectorTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWeakSelectorTarget.h; sourceTree = "<group>"; };
+		F1F776AF1DEE93CD00B47C12 /* SCWeakSelectorTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWeakSelectorTarget.m; sourceTree = "<group>"; };
+		F1F776B01DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
+		F1F776B11DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
+		F1F776B31DEE93CD00B47C12 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		F1F776D91DEE93CD00B47C12 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		F1F777431DEE9B1A00B47C12 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1F777441DEE9B1A00B47C12 /* SFVideoEditer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFVideoEditer-Bridging-Header.h"; sourceTree = "<group>"; };
+		F1F777451DEE9B1A00B47C12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F1F7774F1DEEA05C00B47C12 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1F777521DEEA19500B47C12 /* NSArray+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sankit.h"; sourceTree = "<group>"; };
+		F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sankit.m"; sourceTree = "<group>"; };
+		F1F777541DEEA19500B47C12 /* NSDate+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Sankit.h"; sourceTree = "<group>"; };
+		F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Sankit.m"; sourceTree = "<group>"; };
+		F1F777561DEEA19500B47C12 /* NSDictionary+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Sankit.h"; sourceTree = "<group>"; };
+		F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Sankit.m"; sourceTree = "<group>"; };
+		F1F777581DEEA19500B47C12 /* NSMutableArray+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Sankit.h"; sourceTree = "<group>"; };
+		F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Sankit.m"; sourceTree = "<group>"; };
+		F1F7775A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Sankit.h"; sourceTree = "<group>"; };
+		F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Sankit.m"; sourceTree = "<group>"; };
+		F1F7775C1DEEA19500B47C12 /* NSNumber+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Sankit.h"; sourceTree = "<group>"; };
+		F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Sankit.m"; sourceTree = "<group>"; };
+		F1F7775E1DEEA19500B47C12 /* NSObject+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sankit.h"; sourceTree = "<group>"; };
+		F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sankit.m"; sourceTree = "<group>"; };
+		F1F777601DEEA19500B47C12 /* NSString+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sankit.h"; sourceTree = "<group>"; };
+		F1F777611DEEA19500B47C12 /* NSString+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sankit.m"; sourceTree = "<group>"; };
+		F1F777621DEEA19500B47C12 /* NSTimer+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Sankit.h"; sourceTree = "<group>"; };
+		F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Sankit.m"; sourceTree = "<group>"; };
+		F1F777641DEEA19500B47C12 /* NSUserDefaults+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Sankit.h"; sourceTree = "<group>"; };
+		F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Sankit.m"; sourceTree = "<group>"; };
+		F1F777671DEEA19500B47C12 /* SanIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanIcon.h; sourceTree = "<group>"; };
+		F1F777681DEEA19500B47C12 /* SanIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanIcon.m; sourceTree = "<group>"; };
+		F1F777691DEEA19500B47C12 /* sanicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sanicon.ttf; sourceTree = "<group>"; };
+		F1F7776A1DEEA19500B47C12 /* SanKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanKit.h; sourceTree = "<group>"; };
+		F1F7776B1DEEA19500B47C12 /* SankitFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SankitFactory.h; sourceTree = "<group>"; };
+		F1F7776C1DEEA19500B47C12 /* SankitFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SankitFactory.m; sourceTree = "<group>"; };
+		F1F7776F1DEEA19500B47C12 /* SFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCache.h; sourceTree = "<group>"; };
+		F1F777701DEEA19500B47C12 /* SFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCache.m; sourceTree = "<group>"; };
+		F1F777711DEEA19500B47C12 /* SFKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFKeyChainStore.h; sourceTree = "<group>"; };
+		F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFKeyChainStore.m; sourceTree = "<group>"; };
+		F1F777731DEEA19500B47C12 /* SFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLabel.h; sourceTree = "<group>"; };
+		F1F777741DEEA19500B47C12 /* SFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLabel.m; sourceTree = "<group>"; };
+		F1F777751DEEA19500B47C12 /* SFMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMacro.h; sourceTree = "<group>"; };
+		F1F777781DEEA19500B47C12 /* SFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTextField.h; sourceTree = "<group>"; };
+		F1F777791DEEA19500B47C12 /* SFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTextField.m; sourceTree = "<group>"; };
+		F1F7777A1DEEA19500B47C12 /* SFTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTriangleView.h; sourceTree = "<group>"; };
+		F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTriangleView.m; sourceTree = "<group>"; };
+		F1F7777C1DEEA19500B47C12 /* SFUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUITableViewController.h; sourceTree = "<group>"; };
+		F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUITableViewController.m; sourceTree = "<group>"; };
+		F1F7777E1DEEA19500B47C12 /* SFUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUIViewController.h; sourceTree = "<group>"; };
+		F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUIViewController.m; sourceTree = "<group>"; };
+		F1F777801DEEA19500B47C12 /* SFUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUtility.h; sourceTree = "<group>"; };
+		F1F777811DEEA19500B47C12 /* SFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUtility.m; sourceTree = "<group>"; };
+		F1F777821DEEA19500B47C12 /* UIAlertController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Sankit.h"; sourceTree = "<group>"; };
+		F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Sankit.m"; sourceTree = "<group>"; };
+		F1F777841DEEA19500B47C12 /* UIApplication+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sankit.h"; sourceTree = "<group>"; };
+		F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sankit.m"; sourceTree = "<group>"; };
+		F1F777861DEEA19500B47C12 /* UIButton+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sankit.h"; sourceTree = "<group>"; };
+		F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Sankit.m"; sourceTree = "<group>"; };
+		F1F777881DEEA19500B47C12 /* UIColor+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Sankit.h"; sourceTree = "<group>"; };
+		F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Sankit.m"; sourceTree = "<group>"; };
+		F1F7778A1DEEA19500B47C12 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F1F7778C1DEEA19500B47C12 /* UIImage+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sankit.h"; sourceTree = "<group>"; };
+		F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sankit.m"; sourceTree = "<group>"; };
+		F1F7778E1DEEA19500B47C12 /* UINavigationController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Sankit.h"; sourceTree = "<group>"; };
+		F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Sankit.m"; sourceTree = "<group>"; };
+		F1F777901DEEA19500B47C12 /* UIScrollView+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Sankit.h"; sourceTree = "<group>"; };
+		F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Sankit.m"; sourceTree = "<group>"; };
+		F1F777921DEEA19500B47C12 /* UIView+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sankit.h"; sourceTree = "<group>"; };
+		F1F777931DEEA19500B47C12 /* UIView+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sankit.m"; sourceTree = "<group>"; };
+		F1F777941DEEA19500B47C12 /* UIViewController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sankit.h"; sourceTree = "<group>"; };
+		F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sankit.m"; sourceTree = "<group>"; };
+		F1F777B91DEEA43B00B47C12 /* OpinionzAlertIconHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconHeart.png; sourceTree = "<group>"; };
+		F1F777BA1DEEA43B00B47C12 /* OpinionzAlertIconInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconInfo.png; sourceTree = "<group>"; };
+		F1F777BB1DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconQuestions.png; sourceTree = "<group>"; };
+		F1F777BC1DEEA43B00B47C12 /* OpinionzAlertIconStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconStar.png; sourceTree = "<group>"; };
+		F1F777BD1DEEA43B00B47C12 /* OpinionzAlertIconSuccess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconSuccess.png; sourceTree = "<group>"; };
+		F1F777BE1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconWarning.png; sourceTree = "<group>"; };
+		F1F777C01DEEA43B00B47C12 /* BlindForLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BlindForLove.mp3; sourceTree = "<group>"; };
+		F1F777C11DEEA43B00B47C12 /* blue one love.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "blue one love.mp3"; sourceTree = "<group>"; };
+		F1F777C21DEEA43B00B47C12 /* Bubbly.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bubbly.mp3; sourceTree = "<group>"; };
+		F1F777C31DEEA43B00B47C12 /* Drums.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Drums.mp3; sourceTree = "<group>"; };
+		F1F777C41DEEA43B00B47C12 /* Nothing in the world.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Nothing in the world.mp3"; sourceTree = "<group>"; };
+		F1F777C51DEEA43B00B47C12 /* 云水禅心.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "云水禅心.mp3"; sourceTree = "<group>"; };
+		F1F777C61DEEA43B00B47C12 /* 优雅美声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "优雅美声.mp3"; sourceTree = "<group>"; };
+		F1F777C71DEEA43B00B47C12 /* 像梦一样自由.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "像梦一样自由.mp3"; sourceTree = "<group>"; };
+		F1F777C81DEEA43B00B47C12 /* 净水轮回.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "净水轮回.mp3"; sourceTree = "<group>"; };
+		F1F777C91DEEA43B00B47C12 /* 午后咖啡.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "午后咖啡.mp3"; sourceTree = "<group>"; };
+		F1F777CA1DEEA43B00B47C12 /* 古琴修禅.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "古琴修禅.mp3"; sourceTree = "<group>"; };
+		F1F777CB1DEEA43B00B47C12 /* 只在心里.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "只在心里.mp3"; sourceTree = "<group>"; };
+		F1F777CC1DEEA43B00B47C12 /* 史诗前奏.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "史诗前奏.mp3"; sourceTree = "<group>"; };
+		F1F777CD1DEEA43B00B47C12 /* 天籁琴绕.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "天籁琴绕.mp3"; sourceTree = "<group>"; };
+		F1F777CE1DEEA43B00B47C12 /* 幽玄禅音.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "幽玄禅音.mp3"; sourceTree = "<group>"; };
+		F1F777CF1DEEA43B00B47C12 /* 恢弘大气.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "恢弘大气.mp3"; sourceTree = "<group>"; };
+		F1F777D01DEEA43B00B47C12 /* 悦动节奏.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "悦动节奏.mp3"; sourceTree = "<group>"; };
+		F1F777D11DEEA43B00B47C12 /* 惬意时光.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "惬意时光.mp3"; sourceTree = "<group>"; };
+		F1F777D21DEEA43B00B47C12 /* 愉悦清晨.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "愉悦清晨.mp3"; sourceTree = "<group>"; };
+		F1F777D31DEEA43B00B47C12 /* 慈光禅心.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "慈光禅心.mp3"; sourceTree = "<group>"; };
+		F1F777D41DEEA43B00B47C12 /* 欢快节奏1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "欢快节奏1.mp3"; sourceTree = "<group>"; };
+		F1F777D51DEEA43B00B47C12 /* 法国浪漫.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "法国浪漫.mp3"; sourceTree = "<group>"; };
+		F1F777D61DEEA43B00B47C12 /* 玄妙过耳.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "玄妙过耳.mp3"; sourceTree = "<group>"; };
+		F1F777D71DEEA43B00B47C12 /* 琴声破舱.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "琴声破舱.mp3"; sourceTree = "<group>"; };
+		F1F777D81DEEA43B00B47C12 /* 男人好难..mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "男人好难..mp3"; sourceTree = "<group>"; };
+		F1F777D91DEEA43B00B47C12 /* 男人好难.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "男人好难.mp3"; sourceTree = "<group>"; };
+		F1F777DA1DEEA43B00B47C12 /* 禅静思语.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "禅静思语.mp3"; sourceTree = "<group>"; };
+		F1F777DB1DEEA43B00B47C12 /* 禅音静心.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "禅音静心.mp3"; sourceTree = "<group>"; };
+		F1F777DC1DEEA43B00B47C12 /* 舒缓自然.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "舒缓自然.mp3"; sourceTree = "<group>"; };
+		F1F777DD1DEEA43B00B47C12 /* 节奏POP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "节奏POP.mp3"; sourceTree = "<group>"; };
+		F1F777DE1DEEA43B00B47C12 /* 花开见佛.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "花开见佛.mp3"; sourceTree = "<group>"; };
+		F1F777DF1DEEA43B00B47C12 /* 贝加尔湖畔.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "贝加尔湖畔.mp3"; sourceTree = "<group>"; };
+		F1F777E01DEEA43B00B47C12 /* 走着走着就散了.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "走着走着就散了.mp3"; sourceTree = "<group>"; };
+		F1F777E11DEEA43B00B47C12 /* 镜面湖声.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "镜面湖声.mp3"; sourceTree = "<group>"; };
+		F1F777E31DEEA43B00B47C12 /* icon-check@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-check@2x.png"; sourceTree = "<group>"; };
+		F1F777E41DEEA43B00B47C12 /* icon-checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-checked@2x.png"; sourceTree = "<group>"; };
+		F1F778101DEEB9F200B47C12 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		F1F778111DEEB9F200B47C12 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		F1F778121DEEB9F200B47C12 /* ConstraintConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConfig.swift; sourceTree = "<group>"; };
+		F1F778131DEEB9F200B47C12 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		F1F778141DEEB9F200B47C12 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		F1F778151DEEB9F200B47C12 /* ConstraintDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDSL.swift; sourceTree = "<group>"; };
+		F1F778161DEEB9F200B47C12 /* ConstraintInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsets.swift; sourceTree = "<group>"; };
+		F1F778171DEEB9F200B47C12 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		F1F778181DEEB9F200B47C12 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		F1F778191DEEB9F200B47C12 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		F1F7781A1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F1F7781B1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		F1F7781C1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		F1F7781D1DEEB9F200B47C12 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		F1F7781E1DEEB9F200B47C12 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		F1F7781F1DEEB9F200B47C12 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		F1F778201DEEB9F200B47C12 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		F1F778211DEEB9F200B47C12 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		F1F778221DEEB9F200B47C12 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		F1F778231DEEB9F200B47C12 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		F1F778241DEEB9F200B47C12 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		F1F778251DEEB9F200B47C12 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		F1F778261DEEB9F200B47C12 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		F1F778271DEEB9F200B47C12 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		F1F778281DEEB9F200B47C12 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		F1F778291DEEB9F200B47C12 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		F1F7782A1DEEB9F200B47C12 /* ConstraintView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintView.swift; sourceTree = "<group>"; };
+		F1F7782B1DEEB9F200B47C12 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		F1F7782C1DEEB9F200B47C12 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		F1F7782D1DEEB9F200B47C12 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1F7782E1DEEB9F200B47C12 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		F1F7782F1DEEB9F200B47C12 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		F1F778301DEEB9F200B47C12 /* SnapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapKit.h; sourceTree = "<group>"; };
+		F1F778311DEEB9F200B47C12 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		F1F778531DEEC0B400B47C12 /* pub-video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pub-video@2x.png"; sourceTree = "<group>"; };
+		F1F778551DEEC4FF00B47C12 /* icn_play_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_play_big.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1F775FD1DEE82CE00B47C12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F777501DEEA05C00B47C12 /* MobileCoreServices.framework in Frameworks */,
+				F1F7774E1DEEA02800B47C12 /* AVFoundation.framework in Frameworks */,
+				F1F7771E1DEE93CD00B47C12 /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1F775F71DEE82CE00B47C12 = {
+			isa = PBXGroup;
+			children = (
+				F1F776021DEE82CE00B47C12 /* SFVideoEditer */,
+				F1F776011DEE82CE00B47C12 /* Products */,
+				F1F7774C1DEEA02800B47C12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1F776011DEE82CE00B47C12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776001DEE82CE00B47C12 /* SFVideoEditer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1F776021DEE82CE00B47C12 /* SFVideoEditer */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776171DEE843900B47C12 /* Views */,
+				F1F776151DEE843900B47C12 /* Controllers */,
+				F1F776161DEE843900B47C12 /* Models */,
+				F1F777421DEE9B1A00B47C12 /* Others */,
+				F1F777B71DEEA43B00B47C12 /* Resources */,
+				F1F776071DEE82CE00B47C12 /* Main.storyboard */,
+				F1F7760A1DEE82CE00B47C12 /* Assets.xcassets */,
+				F1F7760C1DEE82CE00B47C12 /* LaunchScreen.storyboard */,
+				F1F7760F1DEE82CE00B47C12 /* Info.plist */,
+				F1F7761F1DEE93CD00B47C12 /* Libs */,
+			);
+			path = SFVideoEditer;
+			sourceTree = "<group>";
+		};
+		F1F776151DEE843900B47C12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776181DEE845000B47C12 /* EditVideoViewController.swift */,
+				F1F776191DEE845000B47C12 /* TakeVideoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1F776161DEE843900B47C12 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1F776171DEE843900B47C12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7761C1DEE847200B47C12 /* SFVideoSlider.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F1F7761F1DEE93CD00B47C12 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777511DEEA19500B47C12 /* SanKit */,
+				F1F776681DEE93CD00B47C12 /* SCRecorder */,
+				F1F776B21DEE93CD00B47C12 /* SnapKit */,
+				F1F776D71DEE93CD00B47C12 /* SVProgressHUD */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		F1F776681DEE93CD00B47C12 /* SCRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776691DEE93CD00B47C12 /* SCRecorderFramework */,
+				F1F776731DEE93CD00B47C12 /* Sources */,
+			);
+			path = SCRecorder;
+			sourceTree = "<group>";
+		};
+		F1F776691DEE93CD00B47C12 /* SCRecorderFramework */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7766A1DEE93CD00B47C12 /* Info.plist */,
+				F1F7766B1DEE93CD00B47C12 /* SCRecorder.modulemap */,
+				F1F7766C1DEE93CD00B47C12 /* SCRecorderFramework.h */,
+			);
+			path = SCRecorderFramework;
+			sourceTree = "<group>";
+		};
+		F1F776731DEE93CD00B47C12 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776741DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.h */,
+				F1F776751DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m */,
+				F1F776761DEE93CD00B47C12 /* SCAssetExportSession.h */,
+				F1F776771DEE93CD00B47C12 /* SCAssetExportSession.m */,
+				F1F776781DEE93CD00B47C12 /* SCAudioConfiguration.h */,
+				F1F776791DEE93CD00B47C12 /* SCAudioConfiguration.m */,
+				F1F7767A1DEE93CD00B47C12 /* SCAudioTools.h */,
+				F1F7767B1DEE93CD00B47C12 /* SCAudioTools.m */,
+				F1F7767C1DEE93CD00B47C12 /* SCAudioVideoRecorder-Prefix.pch */,
+				F1F7767D1DEE93CD00B47C12 /* SCContext.h */,
+				F1F7767E1DEE93CD00B47C12 /* SCContext.m */,
+				F1F7767F1DEE93CD00B47C12 /* SCFilter+UIImage.h */,
+				F1F776801DEE93CD00B47C12 /* SCFilter+UIImage.m */,
+				F1F776811DEE93CD00B47C12 /* SCFilter+VideoComposition.h */,
+				F1F776821DEE93CD00B47C12 /* SCFilter+VideoComposition.m */,
+				F1F776831DEE93CD00B47C12 /* SCFilter.h */,
+				F1F776841DEE93CD00B47C12 /* SCFilter.m */,
+				F1F776851DEE93CD00B47C12 /* SCFilterAnimation.h */,
+				F1F776861DEE93CD00B47C12 /* SCFilterAnimation.m */,
+				F1F776871DEE93CD00B47C12 /* SCFilterImageView.h */,
+				F1F776881DEE93CD00B47C12 /* SCFilterImageView.m */,
+				F1F776891DEE93CD00B47C12 /* SCImageView.h */,
+				F1F7768A1DEE93CD00B47C12 /* SCImageView.m */,
+				F1F7768B1DEE93CD00B47C12 /* SCIOPixelBuffers.h */,
+				F1F7768C1DEE93CD00B47C12 /* SCIOPixelBuffers.m */,
+				F1F7768D1DEE93CD00B47C12 /* SCMediaTypeConfiguration.h */,
+				F1F7768E1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m */,
+				F1F7768F1DEE93CD00B47C12 /* SCPhotoConfiguration.h */,
+				F1F776901DEE93CD00B47C12 /* SCPhotoConfiguration.m */,
+				F1F776911DEE93CD00B47C12 /* SCPlayer.h */,
+				F1F776921DEE93CD00B47C12 /* SCPlayer.m */,
+				F1F776931DEE93CD00B47C12 /* SCProcessingQueue.h */,
+				F1F776941DEE93CD00B47C12 /* SCProcessingQueue.m */,
+				F1F776951DEE93CD00B47C12 /* SCRecorder.h */,
+				F1F776961DEE93CD00B47C12 /* SCRecorder.m */,
+				F1F776971DEE93CD00B47C12 /* SCRecorderDelegate.h */,
+				F1F776981DEE93CD00B47C12 /* SCRecorderFocusTargetView.h */,
+				F1F776991DEE93CD00B47C12 /* SCRecorderFocusTargetView.m */,
+				F1F7769A1DEE93CD00B47C12 /* SCRecorderHeader.h */,
+				F1F7769B1DEE93CD00B47C12 /* SCRecorderTools.h */,
+				F1F7769C1DEE93CD00B47C12 /* SCRecorderTools.m */,
+				F1F7769D1DEE93CD00B47C12 /* SCRecorderToolsView.h */,
+				F1F7769E1DEE93CD00B47C12 /* SCRecorderToolsView.m */,
+				F1F7769F1DEE93CD00B47C12 /* SCRecordSession.h */,
+				F1F776A01DEE93CD00B47C12 /* SCRecordSession.m */,
+				F1F776A11DEE93CD00B47C12 /* SCRecordSession_Internal.h */,
+				F1F776A21DEE93CD00B47C12 /* SCRecordSessionSegment.h */,
+				F1F776A31DEE93CD00B47C12 /* SCRecordSessionSegment.m */,
+				F1F776A41DEE93CD00B47C12 /* SCSampleBufferHolder.h */,
+				F1F776A51DEE93CD00B47C12 /* SCSampleBufferHolder.m */,
+				F1F776A61DEE93CD00B47C12 /* SCSaveToCameraRollOperation.h */,
+				F1F776A71DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m */,
+				F1F776A81DEE93CD00B47C12 /* SCSwipeableFilterView.h */,
+				F1F776A91DEE93CD00B47C12 /* SCSwipeableFilterView.m */,
+				F1F776AA1DEE93CD00B47C12 /* SCVideoConfiguration.h */,
+				F1F776AB1DEE93CD00B47C12 /* SCVideoConfiguration.m */,
+				F1F776AC1DEE93CD00B47C12 /* SCVideoPlayerView.h */,
+				F1F776AD1DEE93CD00B47C12 /* SCVideoPlayerView.m */,
+				F1F776AE1DEE93CD00B47C12 /* SCWeakSelectorTarget.h */,
+				F1F776AF1DEE93CD00B47C12 /* SCWeakSelectorTarget.m */,
+				F1F776B01DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.h */,
+				F1F776B11DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F1F776B21DEE93CD00B47C12 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7780F1DEEB9F200B47C12 /* Source */,
+				F1F776B31DEE93CD00B47C12 /* SnapKit.framework */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		F1F776D71DEE93CD00B47C12 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */,
+				F1F776D91DEE93CD00B47C12 /* SVProgressHUD.h */,
+				F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		F1F777421DEE9B1A00B47C12 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F14E76B81E0914340028D9B8 /* Config.swift */,
+				F1F777431DEE9B1A00B47C12 /* AppDelegate.swift */,
+				F1F777441DEE9B1A00B47C12 /* SFVideoEditer-Bridging-Header.h */,
+				F1F777451DEE9B1A00B47C12 /* ViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		F1F7774C1DEEA02800B47C12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1F7774F1DEEA05C00B47C12 /* MobileCoreServices.framework */,
+				F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F777511DEEA19500B47C12 /* SanKit */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777521DEEA19500B47C12 /* NSArray+Sankit.h */,
+				F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */,
+				F1F777541DEEA19500B47C12 /* NSDate+Sankit.h */,
+				F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */,
+				F1F777561DEEA19500B47C12 /* NSDictionary+Sankit.h */,
+				F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */,
+				F1F777581DEEA19500B47C12 /* NSMutableArray+Sankit.h */,
+				F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */,
+				F1F7775A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.h */,
+				F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */,
+				F1F7775C1DEEA19500B47C12 /* NSNumber+Sankit.h */,
+				F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */,
+				F1F7775E1DEEA19500B47C12 /* NSObject+Sankit.h */,
+				F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */,
+				F1F777601DEEA19500B47C12 /* NSString+Sankit.h */,
+				F1F777611DEEA19500B47C12 /* NSString+Sankit.m */,
+				F1F777621DEEA19500B47C12 /* NSTimer+Sankit.h */,
+				F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */,
+				F1F777641DEEA19500B47C12 /* NSUserDefaults+Sankit.h */,
+				F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */,
+				F1F777661DEEA19500B47C12 /* SanIcon */,
+				F1F7776A1DEEA19500B47C12 /* SanKit.h */,
+				F1F7776B1DEEA19500B47C12 /* SankitFactory.h */,
+				F1F7776C1DEEA19500B47C12 /* SankitFactory.m */,
+				F1F7776F1DEEA19500B47C12 /* SFCache.h */,
+				F1F777701DEEA19500B47C12 /* SFCache.m */,
+				F1F777711DEEA19500B47C12 /* SFKeyChainStore.h */,
+				F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */,
+				F1F777731DEEA19500B47C12 /* SFLabel.h */,
+				F1F777741DEEA19500B47C12 /* SFLabel.m */,
+				F1F777751DEEA19500B47C12 /* SFMacro.h */,
+				F1F777781DEEA19500B47C12 /* SFTextField.h */,
+				F1F777791DEEA19500B47C12 /* SFTextField.m */,
+				F1F7777A1DEEA19500B47C12 /* SFTriangleView.h */,
+				F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */,
+				F1F7777C1DEEA19500B47C12 /* SFUITableViewController.h */,
+				F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */,
+				F1F7777E1DEEA19500B47C12 /* SFUIViewController.h */,
+				F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */,
+				F1F777801DEEA19500B47C12 /* SFUtility.h */,
+				F1F777811DEEA19500B47C12 /* SFUtility.m */,
+				F1F777821DEEA19500B47C12 /* UIAlertController+Sankit.h */,
+				F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */,
+				F1F777841DEEA19500B47C12 /* UIApplication+Sankit.h */,
+				F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */,
+				F1F777861DEEA19500B47C12 /* UIButton+Sankit.h */,
+				F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */,
+				F1F777881DEEA19500B47C12 /* UIColor+Sankit.h */,
+				F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */,
+				F1F7778A1DEEA19500B47C12 /* UIImage+ImageEffects.h */,
+				F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */,
+				F1F7778C1DEEA19500B47C12 /* UIImage+Sankit.h */,
+				F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */,
+				F1F7778E1DEEA19500B47C12 /* UINavigationController+Sankit.h */,
+				F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */,
+				F1F777901DEEA19500B47C12 /* UIScrollView+Sankit.h */,
+				F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */,
+				F1F777921DEEA19500B47C12 /* UIView+Sankit.h */,
+				F1F777931DEEA19500B47C12 /* UIView+Sankit.m */,
+				F1F777941DEEA19500B47C12 /* UIViewController+Sankit.h */,
+				F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */,
+			);
+			path = SanKit;
+			sourceTree = "<group>";
+		};
+		F1F777661DEEA19500B47C12 /* SanIcon */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777671DEEA19500B47C12 /* SanIcon.h */,
+				F1F777681DEEA19500B47C12 /* SanIcon.m */,
+				F1F777691DEEA19500B47C12 /* sanicon.ttf */,
+			);
+			path = SanIcon;
+			sourceTree = "<group>";
+		};
+		F1F777B71DEEA43B00B47C12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777B81DEEA43B00B47C12 /* AlertView */,
+				F1F777BF1DEEA43B00B47C12 /* BGMusic */,
+				F1F777E21DEEA43B00B47C12 /* Icons */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1F777B81DEEA43B00B47C12 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777B91DEEA43B00B47C12 /* OpinionzAlertIconHeart.png */,
+				F1F777BA1DEEA43B00B47C12 /* OpinionzAlertIconInfo.png */,
+				F1F777BB1DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png */,
+				F1F777BC1DEEA43B00B47C12 /* OpinionzAlertIconStar.png */,
+				F1F777BD1DEEA43B00B47C12 /* OpinionzAlertIconSuccess.png */,
+				F1F777BE1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		F1F777BF1DEEA43B00B47C12 /* BGMusic */ = {
+			isa = PBXGroup;
+			children = (
+				F1F777C01DEEA43B00B47C12 /* BlindForLove.mp3 */,
+				F1F777C11DEEA43B00B47C12 /* blue one love.mp3 */,
+				F1F777C21DEEA43B00B47C12 /* Bubbly.mp3 */,
+				F1F777C31DEEA43B00B47C12 /* Drums.mp3 */,
+				F1F777C41DEEA43B00B47C12 /* Nothing in the world.mp3 */,
+				F1F777C51DEEA43B00B47C12 /* 云水禅心.mp3 */,
+				F1F777C61DEEA43B00B47C12 /* 优雅美声.mp3 */,
+				F1F777C71DEEA43B00B47C12 /* 像梦一样自由.mp3 */,
+				F1F777C81DEEA43B00B47C12 /* 净水轮回.mp3 */,
+				F1F777C91DEEA43B00B47C12 /* 午后咖啡.mp3 */,
+				F1F777CA1DEEA43B00B47C12 /* 古琴修禅.mp3 */,
+				F1F777CB1DEEA43B00B47C12 /* 只在心里.mp3 */,
+				F1F777CC1DEEA43B00B47C12 /* 史诗前奏.mp3 */,
+				F1F777CD1DEEA43B00B47C12 /* 天籁琴绕.mp3 */,
+				F1F777CE1DEEA43B00B47C12 /* 幽玄禅音.mp3 */,
+				F1F777CF1DEEA43B00B47C12 /* 恢弘大气.mp3 */,
+				F1F777D01DEEA43B00B47C12 /* 悦动节奏.mp3 */,
+				F1F777D11DEEA43B00B47C12 /* 惬意时光.mp3 */,
+				F1F777D21DEEA43B00B47C12 /* 愉悦清晨.mp3 */,
+				F1F777D31DEEA43B00B47C12 /* 慈光禅心.mp3 */,
+				F1F777D41DEEA43B00B47C12 /* 欢快节奏1.mp3 */,
+				F1F777D51DEEA43B00B47C12 /* 法国浪漫.mp3 */,
+				F1F777D61DEEA43B00B47C12 /* 玄妙过耳.mp3 */,
+				F1F777D71DEEA43B00B47C12 /* 琴声破舱.mp3 */,
+				F1F777D81DEEA43B00B47C12 /* 男人好难..mp3 */,
+				F1F777D91DEEA43B00B47C12 /* 男人好难.mp3 */,
+				F1F777DA1DEEA43B00B47C12 /* 禅静思语.mp3 */,
+				F1F777DB1DEEA43B00B47C12 /* 禅音静心.mp3 */,
+				F1F777DC1DEEA43B00B47C12 /* 舒缓自然.mp3 */,
+				F1F777DD1DEEA43B00B47C12 /* 节奏POP.mp3 */,
+				F1F777DE1DEEA43B00B47C12 /* 花开见佛.mp3 */,
+				F1F777DF1DEEA43B00B47C12 /* 贝加尔湖畔.mp3 */,
+				F1F777E01DEEA43B00B47C12 /* 走着走着就散了.mp3 */,
+				F1F777E11DEEA43B00B47C12 /* 镜面湖声.mp3 */,
+			);
+			path = BGMusic;
+			sourceTree = "<group>";
+		};
+		F1F777E21DEEA43B00B47C12 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F1F778551DEEC4FF00B47C12 /* icn_play_big.png */,
+				F1F778531DEEC0B400B47C12 /* pub-video@2x.png */,
+				F1F777E31DEEA43B00B47C12 /* icon-check@2x.png */,
+				F1F777E41DEEA43B00B47C12 /* icon-checked@2x.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		F1F7780F1DEEB9F200B47C12 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F1F778101DEEB9F200B47C12 /* Constraint.swift */,
+				F1F778111DEEB9F200B47C12 /* ConstraintAttributes.swift */,
+				F1F778121DEEB9F200B47C12 /* ConstraintConfig.swift */,
+				F1F778131DEEB9F200B47C12 /* ConstraintConstantTarget.swift */,
+				F1F778141DEEB9F200B47C12 /* ConstraintDescription.swift */,
+				F1F778151DEEB9F200B47C12 /* ConstraintDSL.swift */,
+				F1F778161DEEB9F200B47C12 /* ConstraintInsets.swift */,
+				F1F778171DEEB9F200B47C12 /* ConstraintInsetTarget.swift */,
+				F1F778181DEEB9F200B47C12 /* ConstraintItem.swift */,
+				F1F778191DEEB9F200B47C12 /* ConstraintLayoutGuide+Extensions.swift */,
+				F1F7781A1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift */,
+				F1F7781B1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift */,
+				F1F7781C1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift */,
+				F1F7781D1DEEB9F200B47C12 /* ConstraintLayoutSupportDSL.swift */,
+				F1F7781E1DEEB9F200B47C12 /* ConstraintMaker.swift */,
+				F1F7781F1DEEB9F200B47C12 /* ConstraintMakerEditable.swift */,
+				F1F778201DEEB9F200B47C12 /* ConstraintMakerExtendable.swift */,
+				F1F778211DEEB9F200B47C12 /* ConstraintMakerFinalizable.swift */,
+				F1F778221DEEB9F200B47C12 /* ConstraintMakerPriortizable.swift */,
+				F1F778231DEEB9F200B47C12 /* ConstraintMakerRelatable.swift */,
+				F1F778241DEEB9F200B47C12 /* ConstraintMultiplierTarget.swift */,
+				F1F778251DEEB9F200B47C12 /* ConstraintOffsetTarget.swift */,
+				F1F778261DEEB9F200B47C12 /* ConstraintPriorityTarget.swift */,
+				F1F778271DEEB9F200B47C12 /* ConstraintRelatableTarget.swift */,
+				F1F778281DEEB9F200B47C12 /* ConstraintRelation.swift */,
+				F1F778291DEEB9F200B47C12 /* ConstraintView+Extensions.swift */,
+				F1F7782A1DEEB9F200B47C12 /* ConstraintView.swift */,
+				F1F7782B1DEEB9F200B47C12 /* ConstraintViewDSL.swift */,
+				F1F7782C1DEEB9F200B47C12 /* Debugging.swift */,
+				F1F7782D1DEEB9F200B47C12 /* Info.plist */,
+				F1F7782E1DEEB9F200B47C12 /* LayoutConstraint.swift */,
+				F1F7782F1DEEB9F200B47C12 /* LayoutConstraintItem.swift */,
+				F1F778301DEEB9F200B47C12 /* SnapKit.h */,
+				F1F778311DEEB9F200B47C12 /* UILayoutSupport+Extensions.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1F775FF1DEE82CE00B47C12 /* SFVideoEditer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1F776121DEE82CE00B47C12 /* Build configuration list for PBXNativeTarget "SFVideoEditer" */;
+			buildPhases = (
+				F1F775FC1DEE82CE00B47C12 /* Sources */,
+				F1F775FD1DEE82CE00B47C12 /* Frameworks */,
+				F1F775FE1DEE82CE00B47C12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SFVideoEditer;
+			productName = SFVideoEditer;
+			productReference = F1F776001DEE82CE00B47C12 /* SFVideoEditer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1F775F81DEE82CE00B47C12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sanfriend Technology Co. Ltd.";
+				TargetAttributes = {
+					F1F775FF1DEE82CE00B47C12 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PW8H33SGAM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1F775FB1DEE82CE00B47C12 /* Build configuration list for PBXProject "SFVideoEditer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = F1F775F71DEE82CE00B47C12;
+			productRefGroup = F1F776011DEE82CE00B47C12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1F775FF1DEE82CE00B47C12 /* SFVideoEditer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1F775FE1DEE82CE00B47C12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F7780C1DEEA43B00B47C12 /* 镜面湖声.mp3 in Resources */,
+				F1F777E51DEEA43B00B47C12 /* OpinionzAlertIconHeart.png in Resources */,
+				F1F777FD1DEEA43B00B47C12 /* 愉悦清晨.mp3 in Resources */,
+				F1F778081DEEA43B00B47C12 /* 节奏POP.mp3 in Resources */,
+				F1F778071DEEA43B00B47C12 /* 舒缓自然.mp3 in Resources */,
+				F1F7780A1DEEA43B00B47C12 /* 贝加尔湖畔.mp3 in Resources */,
+				F1F777FA1DEEA43B00B47C12 /* 恢弘大气.mp3 in Resources */,
+				F1F777F01DEEA43B00B47C12 /* 云水禅心.mp3 in Resources */,
+				F1F7780E1DEEA43B00B47C12 /* icon-checked@2x.png in Resources */,
+				F1F777EB1DEEA43B00B47C12 /* BlindForLove.mp3 in Resources */,
+				F1F777401DEE93CD00B47C12 /* SVProgressHUD.bundle in Resources */,
+				F1F777FC1DEEA43B00B47C12 /* 惬意时光.mp3 in Resources */,
+				F1F777F11DEEA43B00B47C12 /* 优雅美声.mp3 in Resources */,
+				F1F778041DEEA43B00B47C12 /* 男人好难.mp3 in Resources */,
+				F1F777E91DEEA43B00B47C12 /* OpinionzAlertIconSuccess.png in Resources */,
+				F1F777E81DEEA43B00B47C12 /* OpinionzAlertIconStar.png in Resources */,
+				F1F777E61DEEA43B00B47C12 /* OpinionzAlertIconInfo.png in Resources */,
+				F1F777F71DEEA43B00B47C12 /* 史诗前奏.mp3 in Resources */,
+				F1F778061DEEA43B00B47C12 /* 禅音静心.mp3 in Resources */,
+				F1F777EA1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png in Resources */,
+				F1F777ED1DEEA43B00B47C12 /* Bubbly.mp3 in Resources */,
+				F1F7760E1DEE82CE00B47C12 /* LaunchScreen.storyboard in Resources */,
+				F1F777A11DEEA19500B47C12 /* sanicon.ttf in Resources */,
+				F1F778011DEEA43B00B47C12 /* 玄妙过耳.mp3 in Resources */,
+				F1F777F61DEEA43B00B47C12 /* 只在心里.mp3 in Resources */,
+				F1F777EE1DEEA43B00B47C12 /* Drums.mp3 in Resources */,
+				F1F777FE1DEEA43B00B47C12 /* 慈光禅心.mp3 in Resources */,
+				F1F778051DEEA43B00B47C12 /* 禅静思语.mp3 in Resources */,
+				F1F777F31DEEA43B00B47C12 /* 净水轮回.mp3 in Resources */,
+				F1F7760B1DEE82CE00B47C12 /* Assets.xcassets in Resources */,
+				F1F778031DEEA43B00B47C12 /* 男人好难..mp3 in Resources */,
+				F1F776FD1DEE93CD00B47C12 /* Info.plist in Resources */,
+				F1F777F51DEEA43B00B47C12 /* 古琴修禅.mp3 in Resources */,
+				F1F776091DEE82CE00B47C12 /* Main.storyboard in Resources */,
+				F1F7780D1DEEA43B00B47C12 /* icon-check@2x.png in Resources */,
+				F1F778021DEEA43B00B47C12 /* 琴声破舱.mp3 in Resources */,
+				F1F777F41DEEA43B00B47C12 /* 午后咖啡.mp3 in Resources */,
+				F1F778561DEEC4FF00B47C12 /* icn_play_big.png in Resources */,
+				F1F778001DEEA43B00B47C12 /* 法国浪漫.mp3 in Resources */,
+				F1F777FB1DEEA43B00B47C12 /* 悦动节奏.mp3 in Resources */,
+				F1F777F81DEEA43B00B47C12 /* 天籁琴绕.mp3 in Resources */,
+				F1F778541DEEC0B400B47C12 /* pub-video@2x.png in Resources */,
+				F1F777FF1DEEA43B00B47C12 /* 欢快节奏1.mp3 in Resources */,
+				F1F7784F1DEEB9F300B47C12 /* Info.plist in Resources */,
+				F1F777F91DEEA43B00B47C12 /* 幽玄禅音.mp3 in Resources */,
+				F1F778091DEEA43B00B47C12 /* 花开见佛.mp3 in Resources */,
+				F1F777E71DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png in Resources */,
+				F1F777EC1DEEA43B00B47C12 /* blue one love.mp3 in Resources */,
+				F1F7780B1DEEA43B00B47C12 /* 走着走着就散了.mp3 in Resources */,
+				F1F777EF1DEEA43B00B47C12 /* Nothing in the world.mp3 in Resources */,
+				F1F777F21DEEA43B00B47C12 /* 像梦一样自由.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1F775FC1DEE82CE00B47C12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1F777AA1DEEA19500B47C12 /* SFUITableViewController.m in Sources */,
+				F1F777021DEE93CD00B47C12 /* SCAssetExportSession.m in Sources */,
+				F1F777471DEE9B1A00B47C12 /* ViewController.swift in Sources */,
+				F1F7783A1DEEB9F200B47C12 /* ConstraintItem.swift in Sources */,
+				F1F7770A1DEE93CD00B47C12 /* SCFilterImageView.m in Sources */,
+				F1F777AC1DEEA19500B47C12 /* SFUtility.m in Sources */,
+				F1F777071DEE93CD00B47C12 /* SCFilter+VideoComposition.m in Sources */,
+				F1F778481DEEB9F300B47C12 /* ConstraintPriorityTarget.swift in Sources */,
+				F1F778401DEEB9F300B47C12 /* ConstraintMaker.swift in Sources */,
+				F1F777B51DEEA19500B47C12 /* UIView+Sankit.m in Sources */,
+				F1F7783E1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift in Sources */,
+				F1F7779E1DEEA19500B47C12 /* NSTimer+Sankit.m in Sources */,
+				F1F777A91DEEA19500B47C12 /* SFTriangleView.m in Sources */,
+				F1F777121DEE93CD00B47C12 /* SCRecorderFocusTargetView.m in Sources */,
+				F1F777961DEEA19500B47C12 /* NSArray+Sankit.m in Sources */,
+				F1F7779F1DEEA19500B47C12 /* NSUserDefaults+Sankit.m in Sources */,
+				F1F778491DEEB9F300B47C12 /* ConstraintRelatableTarget.swift in Sources */,
+				F1F7784A1DEEB9F300B47C12 /* ConstraintRelation.swift in Sources */,
+				F1F777091DEE93CD00B47C12 /* SCFilterAnimation.m in Sources */,
+				F1F777AB1DEEA19500B47C12 /* SFUIViewController.m in Sources */,
+				F1F777041DEE93CD00B47C12 /* SCAudioTools.m in Sources */,
+				F1F7784E1DEEB9F300B47C12 /* Debugging.swift in Sources */,
+				F1F778351DEEB9F200B47C12 /* ConstraintConstantTarget.swift in Sources */,
+				F1F777061DEE93CD00B47C12 /* SCFilter+UIImage.m in Sources */,
+				F1F7770C1DEE93CD00B47C12 /* SCIOPixelBuffers.m in Sources */,
+				F1F778391DEEB9F200B47C12 /* ConstraintInsetTarget.swift in Sources */,
+				F1F777B41DEEA19500B47C12 /* UIScrollView+Sankit.m in Sources */,
+				F1F7784C1DEEB9F300B47C12 /* ConstraintView.swift in Sources */,
+				F1F777A61DEEA19500B47C12 /* SFLabel.m in Sources */,
+				F1F7770D1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m in Sources */,
+				F1F778371DEEB9F200B47C12 /* ConstraintDSL.swift in Sources */,
+				F1F777171DEE93CD00B47C12 /* SCSampleBufferHolder.m in Sources */,
+				F1F7770E1DEE93CD00B47C12 /* SCPhotoConfiguration.m in Sources */,
+				F1F777B11DEEA19500B47C12 /* UIImage+ImageEffects.m in Sources */,
+				F1F777981DEEA19500B47C12 /* NSDictionary+Sankit.m in Sources */,
+				F1F777031DEE93CD00B47C12 /* SCAudioConfiguration.m in Sources */,
+				F1F778511DEEB9F300B47C12 /* LayoutConstraintItem.swift in Sources */,
+				F1F778441DEEB9F300B47C12 /* ConstraintMakerPriortizable.swift in Sources */,
+				F1F777141DEE93CD00B47C12 /* SCRecorderToolsView.m in Sources */,
+				F1F777151DEE93CD00B47C12 /* SCRecordSession.m in Sources */,
+				F1F777111DEE93CD00B47C12 /* SCRecorder.m in Sources */,
+				F1F7783C1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift in Sources */,
+				F1F777AF1DEEA19500B47C12 /* UIButton+Sankit.m in Sources */,
+				F1F777B61DEEA19500B47C12 /* UIViewController+Sankit.m in Sources */,
+				F1F777101DEE93CD00B47C12 /* SCProcessingQueue.m in Sources */,
+				F1F778471DEEB9F300B47C12 /* ConstraintOffsetTarget.swift in Sources */,
+				F1F7784B1DEEB9F300B47C12 /* ConstraintView+Extensions.swift in Sources */,
+				F1F7784D1DEEB9F300B47C12 /* ConstraintViewDSL.swift in Sources */,
+				F1F7761A1DEE845000B47C12 /* EditVideoViewController.swift in Sources */,
+				F1F777081DEE93CD00B47C12 /* SCFilter.m in Sources */,
+				F1F7779D1DEEA19500B47C12 /* NSString+Sankit.m in Sources */,
+				F1F777191DEE93CD00B47C12 /* SCSwipeableFilterView.m in Sources */,
+				F1F778461DEEB9F300B47C12 /* ConstraintMultiplierTarget.swift in Sources */,
+				F1F778321DEEB9F200B47C12 /* Constraint.swift in Sources */,
+				F1F777A81DEEA19500B47C12 /* SFTextField.m in Sources */,
+				F1F777011DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m in Sources */,
+				F1F7761D1DEE847200B47C12 /* SFVideoSlider.swift in Sources */,
+				F1F7779B1DEEA19500B47C12 /* NSNumber+Sankit.m in Sources */,
+				F1F777991DEEA19500B47C12 /* NSMutableArray+Sankit.m in Sources */,
+				F1F7783D1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				F1F778501DEEB9F300B47C12 /* LayoutConstraint.swift in Sources */,
+				F1F777B31DEEA19500B47C12 /* UINavigationController+Sankit.m in Sources */,
+				F1F777B01DEEA19500B47C12 /* UIColor+Sankit.m in Sources */,
+				F1F777B21DEEA19500B47C12 /* UIImage+Sankit.m in Sources */,
+				F1F778331DEEB9F200B47C12 /* ConstraintAttributes.swift in Sources */,
+				F1F778341DEEB9F200B47C12 /* ConstraintConfig.swift in Sources */,
+				F1F777461DEE9B1A00B47C12 /* AppDelegate.swift in Sources */,
+				F1F7761B1DEE845000B47C12 /* TakeVideoViewController.swift in Sources */,
+				F1F778431DEEB9F300B47C12 /* ConstraintMakerFinalizable.swift in Sources */,
+				F1F7783B1DEEB9F200B47C12 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				F1F7770B1DEE93CD00B47C12 /* SCImageView.m in Sources */,
+				F1F778521DEEB9F300B47C12 /* UILayoutSupport+Extensions.swift in Sources */,
+				F1F778421DEEB9F300B47C12 /* ConstraintMakerExtendable.swift in Sources */,
+				F1F778451DEEB9F300B47C12 /* ConstraintMakerRelatable.swift in Sources */,
+				F1F777131DEE93CD00B47C12 /* SCRecorderTools.m in Sources */,
+				F1F777AE1DEEA19500B47C12 /* UIApplication+Sankit.m in Sources */,
+				F1F777AD1DEEA19500B47C12 /* UIAlertController+Sankit.m in Sources */,
+				F1F777181DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m in Sources */,
+				F1F777161DEE93CD00B47C12 /* SCRecordSessionSegment.m in Sources */,
+				F1F777A21DEEA19500B47C12 /* SankitFactory.m in Sources */,
+				F1F777A01DEEA19500B47C12 /* SanIcon.m in Sources */,
+				F1F7779C1DEEA19500B47C12 /* NSObject+Sankit.m in Sources */,
+				F1F777411DEE93CD00B47C12 /* SVProgressHUD.m in Sources */,
+				F1F7770F1DEE93CD00B47C12 /* SCPlayer.m in Sources */,
+				F1F777A41DEEA19500B47C12 /* SFCache.m in Sources */,
+				F1F7771D1DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m in Sources */,
+				F1F7771B1DEE93CD00B47C12 /* SCVideoPlayerView.m in Sources */,
+				F1F778411DEEB9F300B47C12 /* ConstraintMakerEditable.swift in Sources */,
+				F1F7783F1DEEB9F300B47C12 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				F1F7771A1DEE93CD00B47C12 /* SCVideoConfiguration.m in Sources */,
+				F1F777A51DEEA19500B47C12 /* SFKeyChainStore.m in Sources */,
+				F14E76B91E0914340028D9B8 /* Config.swift in Sources */,
+				F1F7779A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m in Sources */,
+				F1F777051DEE93CD00B47C12 /* SCContext.m in Sources */,
+				F1F7771C1DEE93CD00B47C12 /* SCWeakSelectorTarget.m in Sources */,
+				F1F777971DEEA19500B47C12 /* NSDate+Sankit.m in Sources */,
+				F1F778381DEEB9F200B47C12 /* ConstraintInsets.swift in Sources */,
+				F1F778361DEEB9F200B47C12 /* ConstraintDescription.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1F776071DEE82CE00B47C12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F776081DEE82CE00B47C12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1F7760C1DEE82CE00B47C12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1F7760D1DEE82CE00B47C12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1F776101DEE82CE00B47C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1F776111DEE82CE00B47C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1F776131DEE82CE00B47C12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW8H33SGAM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SFVideoEditer/Libs/SnapKit",
+				);
+				INFOPLIST_FILE = SFVideoEditer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanfriend.ios.SFVideoEditer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SFVideoEditer/Others/SFVideoEditer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F1F776141DEE82CE00B47C12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PW8H33SGAM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SFVideoEditer/Libs/SnapKit",
+				);
+				INFOPLIST_FILE = SFVideoEditer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanfriend.ios.SFVideoEditer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SFVideoEditer/Others/SFVideoEditer-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1F775FB1DEE82CE00B47C12 /* Build configuration list for PBXProject "SFVideoEditer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F776101DEE82CE00B47C12 /* Debug */,
+				F1F776111DEE82CE00B47C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1F776121DEE82CE00B47C12 /* Build configuration list for PBXNativeTarget "SFVideoEditer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F776131DEE82CE00B47C12 /* Debug */,
+				F1F776141DEE82CE00B47C12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1F775F81DEE82CE00B47C12 /* Project object */;
+}
