@@ -50,8 +50,6 @@
 		F1F7771C1DEE93CD00B47C12 /* SCWeakSelectorTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776AF1DEE93CD00B47C12 /* SCWeakSelectorTarget.m */; };
 		F1F7771D1DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776B11DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m */; };
 		F1F7771E1DEE93CD00B47C12 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F776B31DEE93CD00B47C12 /* SnapKit.framework */; };
-		F1F777401DEE93CD00B47C12 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */; };
-		F1F777411DEE93CD00B47C12 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */; };
 		F1F777461DEE9B1A00B47C12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F777431DEE9B1A00B47C12 /* AppDelegate.swift */; };
 		F1F777471DEE9B1A00B47C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F777451DEE9B1A00B47C12 /* ViewController.swift */; };
 		F1F7774E1DEEA02800B47C12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */; };
@@ -220,9 +218,6 @@
 		F1F776B01DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SCSaveToCameraRoll.h"; sourceTree = "<group>"; };
 		F1F776B11DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SCSaveToCameraRoll.m"; sourceTree = "<group>"; };
 		F1F776B31DEE93CD00B47C12 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
-		F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		F1F776D91DEE93CD00B47C12 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		F1F777431DEE9B1A00B47C12 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1F777441DEE9B1A00B47C12 /* SFVideoEditer-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SFVideoEditer-Bridging-Header.h"; sourceTree = "<group>"; };
 		F1F777451DEE9B1A00B47C12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -401,7 +396,6 @@
 				F13FC0001E486410008F88A4 /* Catergory */,
 				F1F776681DEE93CD00B47C12 /* SCRecorder */,
 				F1F776B21DEE93CD00B47C12 /* SnapKit */,
-				F1F776D71DEE93CD00B47C12 /* SVProgressHUD */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -501,16 +495,6 @@
 				F1F776B31DEE93CD00B47C12 /* SnapKit.framework */,
 			);
 			path = SnapKit;
-			sourceTree = "<group>";
-		};
-		F1F776D71DEE93CD00B47C12 /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				F1F776D81DEE93CD00B47C12 /* SVProgressHUD.bundle */,
-				F1F776D91DEE93CD00B47C12 /* SVProgressHUD.h */,
-				F1F776DA1DEE93CD00B47C12 /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		F1F777421DEE9B1A00B47C12 /* Others */ = {
@@ -721,7 +705,6 @@
 				F1F777F01DEEA43B00B47C12 /* 云水禅心.mp3 in Resources */,
 				F1F7780E1DEEA43B00B47C12 /* icon-checked@2x.png in Resources */,
 				F1F777EB1DEEA43B00B47C12 /* BlindForLove.mp3 in Resources */,
-				F1F777401DEE93CD00B47C12 /* SVProgressHUD.bundle in Resources */,
 				F1F777FC1DEEA43B00B47C12 /* 惬意时光.mp3 in Resources */,
 				F1F777F11DEEA43B00B47C12 /* 优雅美声.mp3 in Resources */,
 				F1F778041DEEA43B00B47C12 /* 男人好难.mp3 in Resources */,
@@ -832,7 +815,6 @@
 				F13FC00C1E486410008F88A4 /* UIView+Sankit.m in Sources */,
 				F1F777181DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m in Sources */,
 				F1F777161DEE93CD00B47C12 /* SCRecordSessionSegment.m in Sources */,
-				F1F777411DEE93CD00B47C12 /* SVProgressHUD.m in Sources */,
 				F1F7770F1DEE93CD00B47C12 /* SCPlayer.m in Sources */,
 				F1F7771D1DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m in Sources */,
 				F1F7771B1DEE93CD00B47C12 /* SCVideoPlayerView.m in Sources */,

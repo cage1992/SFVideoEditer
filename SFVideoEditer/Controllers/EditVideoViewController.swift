@@ -11,34 +11,34 @@ import UIKit
 class EditVideoViewController: UIViewController, SCPlayerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     //SCPlayer相关
-    var videoPlayer : SCPlayer!
-    var recordSession : SCRecordSession?
-    var newVideoUrl : URL!
-    var exportSession : SCAssetExportSession!
-    var mixOutPutUrl : URL?
-    var mixAssetExportSession : SCAssetExportSession?
-    var exportUrl : URL!
+   private var videoPlayer : SCPlayer!
+   var recordSession : SCRecordSession?
+   private var newVideoUrl : URL!
+   private var exportSession : SCAssetExportSession!
+   private var mixOutPutUrl : URL?
+   private var mixAssetExportSession : SCAssetExportSession?
+   private var exportUrl : URL!
     
     //UI相关
-    var replayBtn : UIButton!
-    var playSlider : SFVideoSlider!
-    var musicTableView : UITableView!
+   private var replayBtn : UIButton!
+   private var playSlider : SFVideoSlider!
+   private var musicTableView : UITableView!
     
     //bgMusic相关
-    let selectImgTag = 1000
-    var selectedFlag = 0
-    var bgMusicPlayer : AVAudioPlayer!
-    var bgMusicUrl : URL?
-    var bgMusicArray : [(String,URL)] = Array.init()
-    let bgMusicIdentifier = "bgMusicCell"
-    let unselectImage = UIImage.init(named: "icon-check")
-    let selectedImage = UIImage.init(named: "icon-checked")
+   private let selectImgTag = 1000
+   private var selectedFlag = 0
+   private var bgMusicPlayer : AVAudioPlayer!
+   private var bgMusicUrl : URL?
+   private var bgMusicArray : [(String,URL)] = Array.init()
+   private let bgMusicIdentifier = "bgMusicCell"
+   private let unselectImage = UIImage.init(named: "icon-check")
+   private let selectedImage = UIImage.init(named: "icon-checked")
    
     //其他
-    var isfromShengHuo : Bool? = false
-    var sliderTimer : Timer!
-    var signStr : String!
-    var thumbnail : UIImage?
+   private var isfromShengHuo : Bool? = false
+   private var sliderTimer : Timer!
+   private var signStr : String!
+   private var thumbnail : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +80,8 @@ class EditVideoViewController: UIViewController, SCPlayerDelegate, UITableViewDe
         replayBtn = UIButton.init()
         playerView.addSubview(replayBtn)
         replayBtn.snp.makeConstraints { (make) in
-            make.center.equalTo(playerView)
+            make.centerX.equalTo(playerView)
+            make.centerY.equalTo(playerView).offset(23)
             make.size.equalTo(CGSize(width: 60, height: 60))
         }
         replayBtn.setBackgroundImage(UIImage.init(named: "icn_play_big"), for: .normal)
@@ -118,19 +119,17 @@ class EditVideoViewController: UIViewController, SCPlayerDelegate, UITableViewDe
 
 //MARK: 加载音乐数据
     private func loadMusicData() {
-        let bgMusicName = [
-            "blue one love","Bubbly","Drums","Nothing in the world","贝加尔湖畔",
-            "慈光禅心","法国浪漫","古琴修禅","花开见佛","欢快节奏1",
-            "恢弘大气","节奏POP","净水轮回","镜面湖声","男人好难",
-            "惬意时光","琴声破舱","史诗前奏","舒缓自然","天籁琴绕",
-            "午后咖啡","像梦一样自由","琴声破舱","玄妙过耳","愉悦清晨",
-            "悦动节奏","只在心里","走着走着就散了"]
-        
-        for name in bgMusicName {
-            if  let bgMusicUrl = Bundle.main.url(forResource: name, withExtension: ".mp3"){
-                bgMusicArray.append((name,bgMusicUrl))
+        if let bgMusicName: [String] = NSArray.init(contentsOfFile: Bundle.main.path(forResource: "BGM", ofType: ".plist")!) as? [String] {
+            
+            for name in bgMusicName {
+                if  let bgMusicUrl = Bundle.main.url(forResource: name, withExtension: ".mp3") {
+                    bgMusicArray.append((name,bgMusicUrl))
+                }
             }
+            
         }
+ 
+        
     }
     
 //MARK: 首次播放视频
@@ -342,7 +341,6 @@ class EditVideoViewController: UIViewController, SCPlayerDelegate, UITableViewDe
         mixOutPutUrl = URL.init(fileURLWithPath: NSHomeDirectory() + String.init(format: "/Library/Caches/%@.mp4", getVideoName()))
         mixAssetExportSession!.outputFileType = AVFileTypeMPEG4
         mixAssetExportSession!.outputUrl = mixOutPutUrl
-       // mixAssetExportSession!.videoConfiguration.sizeAsSquare = true
         mixAssetExportSession!.exportAsynchronously {[unowned self]  in
             self.exportUrl = self.mixAssetExportSession?.outputUrl
            try! FileManager.default.removeItem(atPath: (self.exportSession.outputUrl?.path)!)

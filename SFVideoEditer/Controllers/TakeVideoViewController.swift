@@ -17,6 +17,7 @@ enum VideoQuality {
 }
 
 class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
 //MARK: 公开属性
     
     /**
@@ -41,6 +42,16 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
      */
     var videoQuality : VideoQuality
     
+    /**
+     视频最小时间 默认7
+     */
+    var minTime : Float
+    
+    /**
+     视频最大时间 默认15
+     */
+    var maxTime : Float
+    
 //MARK: 私有属性
     //SCRecorder相关
    private var videoRecorder : SCRecorder
@@ -59,6 +70,8 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
         videoSize = CGSize.zero
         videoSizeAsSquare = false
         videoQuality = VideoQuality.QualityMedium
+        minTime = 7
+        maxTime = 15.9
         videoRecorder = SCRecorder.init()
         super.init(nibName: nil, bundle: nil)
     }
@@ -104,6 +117,7 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
         super.viewWillAppear(animated)
         videoRecorder.session = SCRecordSession.init()
         updateTimeRecordedLabel()
+        takeVideoBtn.isEnabled = true
         confirmBtn.isEnabled = false
         print("---------viewWillDisappear")
     }
@@ -137,7 +151,7 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
         let middlePoint = UIView.init()
         operationView.addSubview(middlePoint)
         middlePoint.snp.makeConstraints { (make) in
-            make.left.equalTo(videoSlider).offset(SD_SCREEN_WIDTH*7/16)
+            make.left.equalTo(videoSlider).offset(SD_SCREEN_WIDTH * CGFloat(minTime) / CGFloat(maxTime))
             make.top.equalTo(operationView)
             make.size.equalTo(CGSize(width: 3, height: 6))
         }
@@ -249,8 +263,8 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
     @objc private func gotoEditVideo() {
         if videoRecorder.session == nil { return }
         
-        if CMTimeGetSeconds(videoRecorder.session!.duration) > 16 || CMTimeGetSeconds(videoRecorder.session!.duration) < 7 {
-            let alert = UIAlertView.init(title: "提示", message: "视频时长: 7至15秒", delegate: self, cancelButtonTitle: "确定")
+        if floor(CMTimeGetSeconds(videoRecorder.session!.duration)) > Double(maxTime) || CMTimeGetSeconds(videoRecorder.session!.duration) < Double(minTime) {
+            let alert = UIAlertView.init(title: "提示", message: "视频时长: \(minTime)至\(maxTime)秒", delegate: self, cancelButtonTitle: "确定")
             alert.show()
             videoRecorder.session?.removeAllSegments()
             confirmBtn.isEnabled = false
@@ -273,16 +287,16 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
             currentTime = videoRecorder.session!.duration;
         }
         
-        if CMTimeGetSeconds(currentTime) >= 7 { //拍摄时长超过7秒，确定按钮可用
+        if CMTimeGetSeconds(currentTime) >= Double(minTime) { //拍摄时长超过minTime，确定按钮可用
             confirmBtn.isEnabled = true
         }
         
-        if CMTimeGetSeconds(currentTime) >= 15.9 { //拍摄时长超过16秒，拍摄停止
+        if CMTimeGetSeconds(currentTime) >= Double(maxTime) { //拍摄时长超过maxTime，拍摄停止
             videoRecorder.pause()
             takeVideoBtn.isEnabled = false
         }
         
-        videoSlider.value = Float(CMTimeGetSeconds(currentTime)) / 15.9
+        videoSlider.value = Float(CMTimeGetSeconds(currentTime)) / maxTime
         timeLabel.text = String.init(format: "%.1f秒", CMTimeGetSeconds(currentTime))
     }
     

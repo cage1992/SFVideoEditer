@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let takeVideoVC = TakeVideoViewController.init()
-        takeVideoVC.videoSize = CGSize.init(width: 1000, height: 1500)
+        takeVideoVC.videoQuality = .QualityHighest
+        takeVideoVC.minTime = 6
+        takeVideoVC.maxTime = 9
         let navi = UINavigationController.init(rootViewController: takeVideoVC)
         self.window?.makeKeyAndVisible()
         self.window?.rootViewController = navi
