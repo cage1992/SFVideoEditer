@@ -266,9 +266,4 @@ typedef enum
  */
 - (void)addCornerRadius:(CGFloat)radius;
 
-/**
- * 添加指定高度和颜色的背景图
- */
-- (void)addBackgroundColor:(UIColor *)color withHeight:(CGFloat)height;
-
 @end

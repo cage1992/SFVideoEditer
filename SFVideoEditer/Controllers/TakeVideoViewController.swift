@@ -26,7 +26,7 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
     var videoSize: CGSize
     
     /**
-     当 为true并且 videoSize = CGSizeZero 时，视频尺寸设置为正方形， 边长为宽或者高较小的一方
+     当 为true并且 videoSize = CGSizeZero 时，视频尺寸设置为正方形，边长为宽或者高较小的一方
      默认 false
      */
     var videoSizeAsSquare : Bool
@@ -70,6 +70,7 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.barTintColor = .black
         self.navigationController?.navigationBar.tintColor = UICOLOR_GOLD
         
         loadUI()
@@ -208,17 +209,10 @@ class TakeVideoViewController: UIViewController, SCRecorderDelegate, UIImagePick
         confirmBtn.setBackgroundImage(UIImage.init(color: UICOLOR_GOLD), for: .normal)
         confirmBtn.addTarget(self, action: #selector(gotoEditVideo), for: .touchUpInside)
         
-     //   let reverseCarmeraItem = UIBarButtonItem.init(title: "切换镜头", style: .plain, target: self, action: #selector(reverseCarmera))
-        
         let reverseCarmeraItem = UIBarButtonItem.init(barButtonSystemItem: .camera, target: self, action: #selector(reverseCarmera))
        
-      //  reverseCarmeraItem.setTitleTextAttributes([NSForegroundColorAttributeName: UICOLOR_GOLD], for: .normal)
         self.navigationItem.rightBarButtonItem = reverseCarmeraItem
         
-//        let negativeSpacer = UIBarButtonItem.init(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
-//        negativeSpacer.width = -10
-//        
-//        self.navigationItem.rightBarButtonItems = [negativeSpacer, reverseCarmeraItem]
     }
     
     func getVideoQuality() -> String {

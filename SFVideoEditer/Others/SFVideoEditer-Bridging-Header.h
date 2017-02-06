@@ -6,6 +6,10 @@
 //  Copyright © 2016年 Sanfriend Technology Co. Ltd. All rights reserved.
 //
 
-#import "SanKit.h"
+#import "UIView+Sankit.h"
+#import "UIImage+Sankit.h"
+#import "UIButton+Sankit.h"
+#import "UIColor+Sankit.h"
+
 #import "SCRecorderHeader.h"
 #import "SVProgressHUD.h"

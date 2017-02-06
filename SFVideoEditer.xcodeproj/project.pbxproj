@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13FC0091E486410008F88A4 /* UIButton+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F13FC0021E486410008F88A4 /* UIButton+Sankit.m */; };
+		F13FC00A1E486410008F88A4 /* UIColor+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F13FC0041E486410008F88A4 /* UIColor+Sankit.m */; };
+		F13FC00B1E486410008F88A4 /* UIImage+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F13FC0061E486410008F88A4 /* UIImage+Sankit.m */; };
+		F13FC00C1E486410008F88A4 /* UIView+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F13FC0081E486410008F88A4 /* UIView+Sankit.m */; };
+		F13FC00E1E48683F008F88A4 /* BGM.plist in Resources */ = {isa = PBXBuildFile; fileRef = F13FC00D1E48683F008F88A4 /* BGM.plist */; };
 		F14E76B91E0914340028D9B8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14E76B81E0914340028D9B8 /* Config.swift */; };
 		F1F776091DEE82CE00B47C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1F776071DEE82CE00B47C12 /* Main.storyboard */; };
 		F1F7760B1DEE82CE00B47C12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1F7760A1DEE82CE00B47C12 /* Assets.xcassets */; };
@@ -51,37 +56,6 @@
 		F1F777471DEE9B1A00B47C12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F777451DEE9B1A00B47C12 /* ViewController.swift */; };
 		F1F7774E1DEEA02800B47C12 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */; };
 		F1F777501DEEA05C00B47C12 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F7774F1DEEA05C00B47C12 /* MobileCoreServices.framework */; };
-		F1F777961DEEA19500B47C12 /* NSArray+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */; };
-		F1F777971DEEA19500B47C12 /* NSDate+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */; };
-		F1F777981DEEA19500B47C12 /* NSDictionary+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */; };
-		F1F777991DEEA19500B47C12 /* NSMutableArray+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */; };
-		F1F7779A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */; };
-		F1F7779B1DEEA19500B47C12 /* NSNumber+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */; };
-		F1F7779C1DEEA19500B47C12 /* NSObject+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */; };
-		F1F7779D1DEEA19500B47C12 /* NSString+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777611DEEA19500B47C12 /* NSString+Sankit.m */; };
-		F1F7779E1DEEA19500B47C12 /* NSTimer+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */; };
-		F1F7779F1DEEA19500B47C12 /* NSUserDefaults+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */; };
-		F1F777A01DEEA19500B47C12 /* SanIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777681DEEA19500B47C12 /* SanIcon.m */; };
-		F1F777A11DEEA19500B47C12 /* sanicon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1F777691DEEA19500B47C12 /* sanicon.ttf */; };
-		F1F777A21DEEA19500B47C12 /* SankitFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7776C1DEEA19500B47C12 /* SankitFactory.m */; };
-		F1F777A41DEEA19500B47C12 /* SFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777701DEEA19500B47C12 /* SFCache.m */; };
-		F1F777A51DEEA19500B47C12 /* SFKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */; };
-		F1F777A61DEEA19500B47C12 /* SFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777741DEEA19500B47C12 /* SFLabel.m */; };
-		F1F777A81DEEA19500B47C12 /* SFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777791DEEA19500B47C12 /* SFTextField.m */; };
-		F1F777A91DEEA19500B47C12 /* SFTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */; };
-		F1F777AA1DEEA19500B47C12 /* SFUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */; };
-		F1F777AB1DEEA19500B47C12 /* SFUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */; };
-		F1F777AC1DEEA19500B47C12 /* SFUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777811DEEA19500B47C12 /* SFUtility.m */; };
-		F1F777AD1DEEA19500B47C12 /* UIAlertController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */; };
-		F1F777AE1DEEA19500B47C12 /* UIApplication+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */; };
-		F1F777AF1DEEA19500B47C12 /* UIButton+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */; };
-		F1F777B01DEEA19500B47C12 /* UIColor+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */; };
-		F1F777B11DEEA19500B47C12 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */; };
-		F1F777B21DEEA19500B47C12 /* UIImage+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */; };
-		F1F777B31DEEA19500B47C12 /* UINavigationController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */; };
-		F1F777B41DEEA19500B47C12 /* UIScrollView+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */; };
-		F1F777B51DEEA19500B47C12 /* UIView+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777931DEEA19500B47C12 /* UIView+Sankit.m */; };
-		F1F777B61DEEA19500B47C12 /* UIViewController+Sankit.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */; };
 		F1F777E51DEEA43B00B47C12 /* OpinionzAlertIconHeart.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777B91DEEA43B00B47C12 /* OpinionzAlertIconHeart.png */; };
 		F1F777E61DEEA43B00B47C12 /* OpinionzAlertIconInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BA1DEEA43B00B47C12 /* OpinionzAlertIconInfo.png */; };
 		F1F777E71DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png in Resources */ = {isa = PBXBuildFile; fileRef = F1F777BB1DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png */; };
@@ -162,6 +136,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F13FC0011E486410008F88A4 /* UIButton+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sankit.h"; sourceTree = "<group>"; };
+		F13FC0021E486410008F88A4 /* UIButton+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Sankit.m"; sourceTree = "<group>"; };
+		F13FC0031E486410008F88A4 /* UIColor+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Sankit.h"; sourceTree = "<group>"; };
+		F13FC0041E486410008F88A4 /* UIColor+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Sankit.m"; sourceTree = "<group>"; };
+		F13FC0051E486410008F88A4 /* UIImage+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sankit.h"; sourceTree = "<group>"; };
+		F13FC0061E486410008F88A4 /* UIImage+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sankit.m"; sourceTree = "<group>"; };
+		F13FC0071E486410008F88A4 /* UIView+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sankit.h"; sourceTree = "<group>"; };
+		F13FC0081E486410008F88A4 /* UIView+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sankit.m"; sourceTree = "<group>"; };
+		F13FC00D1E48683F008F88A4 /* BGM.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BGM.plist; sourceTree = "<group>"; };
 		F14E76B81E0914340028D9B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F1F776001DEE82CE00B47C12 /* SFVideoEditer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFVideoEditer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1F776081DEE82CE00B47C12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -245,69 +228,6 @@
 		F1F777451DEE9B1A00B47C12 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1F7774D1DEEA02800B47C12 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F1F7774F1DEEA05C00B47C12 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		F1F777521DEEA19500B47C12 /* NSArray+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sankit.h"; sourceTree = "<group>"; };
-		F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sankit.m"; sourceTree = "<group>"; };
-		F1F777541DEEA19500B47C12 /* NSDate+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Sankit.h"; sourceTree = "<group>"; };
-		F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Sankit.m"; sourceTree = "<group>"; };
-		F1F777561DEEA19500B47C12 /* NSDictionary+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Sankit.h"; sourceTree = "<group>"; };
-		F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Sankit.m"; sourceTree = "<group>"; };
-		F1F777581DEEA19500B47C12 /* NSMutableArray+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Sankit.h"; sourceTree = "<group>"; };
-		F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Sankit.m"; sourceTree = "<group>"; };
-		F1F7775A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Sankit.h"; sourceTree = "<group>"; };
-		F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Sankit.m"; sourceTree = "<group>"; };
-		F1F7775C1DEEA19500B47C12 /* NSNumber+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Sankit.h"; sourceTree = "<group>"; };
-		F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Sankit.m"; sourceTree = "<group>"; };
-		F1F7775E1DEEA19500B47C12 /* NSObject+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Sankit.h"; sourceTree = "<group>"; };
-		F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Sankit.m"; sourceTree = "<group>"; };
-		F1F777601DEEA19500B47C12 /* NSString+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Sankit.h"; sourceTree = "<group>"; };
-		F1F777611DEEA19500B47C12 /* NSString+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Sankit.m"; sourceTree = "<group>"; };
-		F1F777621DEEA19500B47C12 /* NSTimer+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Sankit.h"; sourceTree = "<group>"; };
-		F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Sankit.m"; sourceTree = "<group>"; };
-		F1F777641DEEA19500B47C12 /* NSUserDefaults+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Sankit.h"; sourceTree = "<group>"; };
-		F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Sankit.m"; sourceTree = "<group>"; };
-		F1F777671DEEA19500B47C12 /* SanIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanIcon.h; sourceTree = "<group>"; };
-		F1F777681DEEA19500B47C12 /* SanIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanIcon.m; sourceTree = "<group>"; };
-		F1F777691DEEA19500B47C12 /* sanicon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sanicon.ttf; sourceTree = "<group>"; };
-		F1F7776A1DEEA19500B47C12 /* SanKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SanKit.h; sourceTree = "<group>"; };
-		F1F7776B1DEEA19500B47C12 /* SankitFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SankitFactory.h; sourceTree = "<group>"; };
-		F1F7776C1DEEA19500B47C12 /* SankitFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SankitFactory.m; sourceTree = "<group>"; };
-		F1F7776F1DEEA19500B47C12 /* SFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFCache.h; sourceTree = "<group>"; };
-		F1F777701DEEA19500B47C12 /* SFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFCache.m; sourceTree = "<group>"; };
-		F1F777711DEEA19500B47C12 /* SFKeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFKeyChainStore.h; sourceTree = "<group>"; };
-		F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFKeyChainStore.m; sourceTree = "<group>"; };
-		F1F777731DEEA19500B47C12 /* SFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFLabel.h; sourceTree = "<group>"; };
-		F1F777741DEEA19500B47C12 /* SFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFLabel.m; sourceTree = "<group>"; };
-		F1F777751DEEA19500B47C12 /* SFMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFMacro.h; sourceTree = "<group>"; };
-		F1F777781DEEA19500B47C12 /* SFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTextField.h; sourceTree = "<group>"; };
-		F1F777791DEEA19500B47C12 /* SFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTextField.m; sourceTree = "<group>"; };
-		F1F7777A1DEEA19500B47C12 /* SFTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFTriangleView.h; sourceTree = "<group>"; };
-		F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFTriangleView.m; sourceTree = "<group>"; };
-		F1F7777C1DEEA19500B47C12 /* SFUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUITableViewController.h; sourceTree = "<group>"; };
-		F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUITableViewController.m; sourceTree = "<group>"; };
-		F1F7777E1DEEA19500B47C12 /* SFUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUIViewController.h; sourceTree = "<group>"; };
-		F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUIViewController.m; sourceTree = "<group>"; };
-		F1F777801DEEA19500B47C12 /* SFUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFUtility.h; sourceTree = "<group>"; };
-		F1F777811DEEA19500B47C12 /* SFUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFUtility.m; sourceTree = "<group>"; };
-		F1F777821DEEA19500B47C12 /* UIAlertController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Sankit.h"; sourceTree = "<group>"; };
-		F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Sankit.m"; sourceTree = "<group>"; };
-		F1F777841DEEA19500B47C12 /* UIApplication+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Sankit.h"; sourceTree = "<group>"; };
-		F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Sankit.m"; sourceTree = "<group>"; };
-		F1F777861DEEA19500B47C12 /* UIButton+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Sankit.h"; sourceTree = "<group>"; };
-		F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Sankit.m"; sourceTree = "<group>"; };
-		F1F777881DEEA19500B47C12 /* UIColor+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Sankit.h"; sourceTree = "<group>"; };
-		F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Sankit.m"; sourceTree = "<group>"; };
-		F1F7778A1DEEA19500B47C12 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		F1F7778C1DEEA19500B47C12 /* UIImage+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Sankit.h"; sourceTree = "<group>"; };
-		F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Sankit.m"; sourceTree = "<group>"; };
-		F1F7778E1DEEA19500B47C12 /* UINavigationController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Sankit.h"; sourceTree = "<group>"; };
-		F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Sankit.m"; sourceTree = "<group>"; };
-		F1F777901DEEA19500B47C12 /* UIScrollView+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Sankit.h"; sourceTree = "<group>"; };
-		F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Sankit.m"; sourceTree = "<group>"; };
-		F1F777921DEEA19500B47C12 /* UIView+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Sankit.h"; sourceTree = "<group>"; };
-		F1F777931DEEA19500B47C12 /* UIView+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Sankit.m"; sourceTree = "<group>"; };
-		F1F777941DEEA19500B47C12 /* UIViewController+Sankit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Sankit.h"; sourceTree = "<group>"; };
-		F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Sankit.m"; sourceTree = "<group>"; };
 		F1F777B91DEEA43B00B47C12 /* OpinionzAlertIconHeart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconHeart.png; sourceTree = "<group>"; };
 		F1F777BA1DEEA43B00B47C12 /* OpinionzAlertIconInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconInfo.png; sourceTree = "<group>"; };
 		F1F777BB1DEEA43B00B47C12 /* OpinionzAlertIconQuestions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OpinionzAlertIconQuestions.png; sourceTree = "<group>"; };
@@ -402,6 +322,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13FC0001E486410008F88A4 /* Catergory */ = {
+			isa = PBXGroup;
+			children = (
+				F13FC0011E486410008F88A4 /* UIButton+Sankit.h */,
+				F13FC0021E486410008F88A4 /* UIButton+Sankit.m */,
+				F13FC0031E486410008F88A4 /* UIColor+Sankit.h */,
+				F13FC0041E486410008F88A4 /* UIColor+Sankit.m */,
+				F13FC0051E486410008F88A4 /* UIImage+Sankit.h */,
+				F13FC0061E486410008F88A4 /* UIImage+Sankit.m */,
+				F13FC0071E486410008F88A4 /* UIView+Sankit.h */,
+				F13FC0081E486410008F88A4 /* UIView+Sankit.m */,
+			);
+			path = Catergory;
+			sourceTree = "<group>";
+		};
 		F1F775F71DEE82CE00B47C12 = {
 			isa = PBXGroup;
 			children = (
@@ -463,7 +398,7 @@
 		F1F7761F1DEE93CD00B47C12 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
-				F1F777511DEEA19500B47C12 /* SanKit */,
+				F13FC0001E486410008F88A4 /* Catergory */,
 				F1F776681DEE93CD00B47C12 /* SCRecorder */,
 				F1F776B21DEE93CD00B47C12 /* SnapKit */,
 				F1F776D71DEE93CD00B47C12 /* SVProgressHUD */,
@@ -598,84 +533,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1F777511DEEA19500B47C12 /* SanKit */ = {
-			isa = PBXGroup;
-			children = (
-				F1F777521DEEA19500B47C12 /* NSArray+Sankit.h */,
-				F1F777531DEEA19500B47C12 /* NSArray+Sankit.m */,
-				F1F777541DEEA19500B47C12 /* NSDate+Sankit.h */,
-				F1F777551DEEA19500B47C12 /* NSDate+Sankit.m */,
-				F1F777561DEEA19500B47C12 /* NSDictionary+Sankit.h */,
-				F1F777571DEEA19500B47C12 /* NSDictionary+Sankit.m */,
-				F1F777581DEEA19500B47C12 /* NSMutableArray+Sankit.h */,
-				F1F777591DEEA19500B47C12 /* NSMutableArray+Sankit.m */,
-				F1F7775A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.h */,
-				F1F7775B1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m */,
-				F1F7775C1DEEA19500B47C12 /* NSNumber+Sankit.h */,
-				F1F7775D1DEEA19500B47C12 /* NSNumber+Sankit.m */,
-				F1F7775E1DEEA19500B47C12 /* NSObject+Sankit.h */,
-				F1F7775F1DEEA19500B47C12 /* NSObject+Sankit.m */,
-				F1F777601DEEA19500B47C12 /* NSString+Sankit.h */,
-				F1F777611DEEA19500B47C12 /* NSString+Sankit.m */,
-				F1F777621DEEA19500B47C12 /* NSTimer+Sankit.h */,
-				F1F777631DEEA19500B47C12 /* NSTimer+Sankit.m */,
-				F1F777641DEEA19500B47C12 /* NSUserDefaults+Sankit.h */,
-				F1F777651DEEA19500B47C12 /* NSUserDefaults+Sankit.m */,
-				F1F777661DEEA19500B47C12 /* SanIcon */,
-				F1F7776A1DEEA19500B47C12 /* SanKit.h */,
-				F1F7776B1DEEA19500B47C12 /* SankitFactory.h */,
-				F1F7776C1DEEA19500B47C12 /* SankitFactory.m */,
-				F1F7776F1DEEA19500B47C12 /* SFCache.h */,
-				F1F777701DEEA19500B47C12 /* SFCache.m */,
-				F1F777711DEEA19500B47C12 /* SFKeyChainStore.h */,
-				F1F777721DEEA19500B47C12 /* SFKeyChainStore.m */,
-				F1F777731DEEA19500B47C12 /* SFLabel.h */,
-				F1F777741DEEA19500B47C12 /* SFLabel.m */,
-				F1F777751DEEA19500B47C12 /* SFMacro.h */,
-				F1F777781DEEA19500B47C12 /* SFTextField.h */,
-				F1F777791DEEA19500B47C12 /* SFTextField.m */,
-				F1F7777A1DEEA19500B47C12 /* SFTriangleView.h */,
-				F1F7777B1DEEA19500B47C12 /* SFTriangleView.m */,
-				F1F7777C1DEEA19500B47C12 /* SFUITableViewController.h */,
-				F1F7777D1DEEA19500B47C12 /* SFUITableViewController.m */,
-				F1F7777E1DEEA19500B47C12 /* SFUIViewController.h */,
-				F1F7777F1DEEA19500B47C12 /* SFUIViewController.m */,
-				F1F777801DEEA19500B47C12 /* SFUtility.h */,
-				F1F777811DEEA19500B47C12 /* SFUtility.m */,
-				F1F777821DEEA19500B47C12 /* UIAlertController+Sankit.h */,
-				F1F777831DEEA19500B47C12 /* UIAlertController+Sankit.m */,
-				F1F777841DEEA19500B47C12 /* UIApplication+Sankit.h */,
-				F1F777851DEEA19500B47C12 /* UIApplication+Sankit.m */,
-				F1F777861DEEA19500B47C12 /* UIButton+Sankit.h */,
-				F1F777871DEEA19500B47C12 /* UIButton+Sankit.m */,
-				F1F777881DEEA19500B47C12 /* UIColor+Sankit.h */,
-				F1F777891DEEA19500B47C12 /* UIColor+Sankit.m */,
-				F1F7778A1DEEA19500B47C12 /* UIImage+ImageEffects.h */,
-				F1F7778B1DEEA19500B47C12 /* UIImage+ImageEffects.m */,
-				F1F7778C1DEEA19500B47C12 /* UIImage+Sankit.h */,
-				F1F7778D1DEEA19500B47C12 /* UIImage+Sankit.m */,
-				F1F7778E1DEEA19500B47C12 /* UINavigationController+Sankit.h */,
-				F1F7778F1DEEA19500B47C12 /* UINavigationController+Sankit.m */,
-				F1F777901DEEA19500B47C12 /* UIScrollView+Sankit.h */,
-				F1F777911DEEA19500B47C12 /* UIScrollView+Sankit.m */,
-				F1F777921DEEA19500B47C12 /* UIView+Sankit.h */,
-				F1F777931DEEA19500B47C12 /* UIView+Sankit.m */,
-				F1F777941DEEA19500B47C12 /* UIViewController+Sankit.h */,
-				F1F777951DEEA19500B47C12 /* UIViewController+Sankit.m */,
-			);
-			path = SanKit;
-			sourceTree = "<group>";
-		};
-		F1F777661DEEA19500B47C12 /* SanIcon */ = {
-			isa = PBXGroup;
-			children = (
-				F1F777671DEEA19500B47C12 /* SanIcon.h */,
-				F1F777681DEEA19500B47C12 /* SanIcon.m */,
-				F1F777691DEEA19500B47C12 /* sanicon.ttf */,
-			);
-			path = SanIcon;
-			sourceTree = "<group>";
-		};
 		F1F777B71DEEA43B00B47C12 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -702,6 +559,7 @@
 		F1F777BF1DEEA43B00B47C12 /* BGMusic */ = {
 			isa = PBXGroup;
 			children = (
+				F13FC00D1E48683F008F88A4 /* BGM.plist */,
 				F1F777C01DEEA43B00B47C12 /* BlindForLove.mp3 */,
 				F1F777C11DEEA43B00B47C12 /* blue one love.mp3 */,
 				F1F777C21DEEA43B00B47C12 /* Bubbly.mp3 */,
@@ -875,7 +733,6 @@
 				F1F777EA1DEEA43B00B47C12 /* OpinionzAlertIconWarning.png in Resources */,
 				F1F777ED1DEEA43B00B47C12 /* Bubbly.mp3 in Resources */,
 				F1F7760E1DEE82CE00B47C12 /* LaunchScreen.storyboard in Resources */,
-				F1F777A11DEEA19500B47C12 /* sanicon.ttf in Resources */,
 				F1F778011DEEA43B00B47C12 /* 玄妙过耳.mp3 in Resources */,
 				F1F777F61DEEA43B00B47C12 /* 只在心里.mp3 in Resources */,
 				F1F777EE1DEEA43B00B47C12 /* Drums.mp3 in Resources */,
@@ -904,6 +761,7 @@
 				F1F7780B1DEEA43B00B47C12 /* 走着走着就散了.mp3 in Resources */,
 				F1F777EF1DEEA43B00B47C12 /* Nothing in the world.mp3 in Resources */,
 				F1F777F21DEEA43B00B47C12 /* 像梦一样自由.mp3 in Resources */,
+				F13FC00E1E48683F008F88A4 /* BGM.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -914,41 +772,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1F777AA1DEEA19500B47C12 /* SFUITableViewController.m in Sources */,
+				F13FC00A1E486410008F88A4 /* UIColor+Sankit.m in Sources */,
+				F13FC00B1E486410008F88A4 /* UIImage+Sankit.m in Sources */,
 				F1F777021DEE93CD00B47C12 /* SCAssetExportSession.m in Sources */,
 				F1F777471DEE9B1A00B47C12 /* ViewController.swift in Sources */,
 				F1F7783A1DEEB9F200B47C12 /* ConstraintItem.swift in Sources */,
 				F1F7770A1DEE93CD00B47C12 /* SCFilterImageView.m in Sources */,
-				F1F777AC1DEEA19500B47C12 /* SFUtility.m in Sources */,
 				F1F777071DEE93CD00B47C12 /* SCFilter+VideoComposition.m in Sources */,
 				F1F778481DEEB9F300B47C12 /* ConstraintPriorityTarget.swift in Sources */,
 				F1F778401DEEB9F300B47C12 /* ConstraintMaker.swift in Sources */,
-				F1F777B51DEEA19500B47C12 /* UIView+Sankit.m in Sources */,
 				F1F7783E1DEEB9F200B47C12 /* ConstraintLayoutSupport.swift in Sources */,
-				F1F7779E1DEEA19500B47C12 /* NSTimer+Sankit.m in Sources */,
-				F1F777A91DEEA19500B47C12 /* SFTriangleView.m in Sources */,
 				F1F777121DEE93CD00B47C12 /* SCRecorderFocusTargetView.m in Sources */,
-				F1F777961DEEA19500B47C12 /* NSArray+Sankit.m in Sources */,
-				F1F7779F1DEEA19500B47C12 /* NSUserDefaults+Sankit.m in Sources */,
 				F1F778491DEEB9F300B47C12 /* ConstraintRelatableTarget.swift in Sources */,
 				F1F7784A1DEEB9F300B47C12 /* ConstraintRelation.swift in Sources */,
 				F1F777091DEE93CD00B47C12 /* SCFilterAnimation.m in Sources */,
-				F1F777AB1DEEA19500B47C12 /* SFUIViewController.m in Sources */,
 				F1F777041DEE93CD00B47C12 /* SCAudioTools.m in Sources */,
 				F1F7784E1DEEB9F300B47C12 /* Debugging.swift in Sources */,
 				F1F778351DEEB9F200B47C12 /* ConstraintConstantTarget.swift in Sources */,
 				F1F777061DEE93CD00B47C12 /* SCFilter+UIImage.m in Sources */,
 				F1F7770C1DEE93CD00B47C12 /* SCIOPixelBuffers.m in Sources */,
 				F1F778391DEEB9F200B47C12 /* ConstraintInsetTarget.swift in Sources */,
-				F1F777B41DEEA19500B47C12 /* UIScrollView+Sankit.m in Sources */,
 				F1F7784C1DEEB9F300B47C12 /* ConstraintView.swift in Sources */,
-				F1F777A61DEEA19500B47C12 /* SFLabel.m in Sources */,
 				F1F7770D1DEE93CD00B47C12 /* SCMediaTypeConfiguration.m in Sources */,
 				F1F778371DEEB9F200B47C12 /* ConstraintDSL.swift in Sources */,
 				F1F777171DEE93CD00B47C12 /* SCSampleBufferHolder.m in Sources */,
 				F1F7770E1DEE93CD00B47C12 /* SCPhotoConfiguration.m in Sources */,
-				F1F777B11DEEA19500B47C12 /* UIImage+ImageEffects.m in Sources */,
-				F1F777981DEEA19500B47C12 /* NSDictionary+Sankit.m in Sources */,
 				F1F777031DEE93CD00B47C12 /* SCAudioConfiguration.m in Sources */,
 				F1F778511DEEB9F300B47C12 /* LayoutConstraintItem.swift in Sources */,
 				F1F778441DEEB9F300B47C12 /* ConstraintMakerPriortizable.swift in Sources */,
@@ -956,28 +804,19 @@
 				F1F777151DEE93CD00B47C12 /* SCRecordSession.m in Sources */,
 				F1F777111DEE93CD00B47C12 /* SCRecorder.m in Sources */,
 				F1F7783C1DEEB9F200B47C12 /* ConstraintLayoutGuide.swift in Sources */,
-				F1F777AF1DEEA19500B47C12 /* UIButton+Sankit.m in Sources */,
-				F1F777B61DEEA19500B47C12 /* UIViewController+Sankit.m in Sources */,
 				F1F777101DEE93CD00B47C12 /* SCProcessingQueue.m in Sources */,
 				F1F778471DEEB9F300B47C12 /* ConstraintOffsetTarget.swift in Sources */,
 				F1F7784B1DEEB9F300B47C12 /* ConstraintView+Extensions.swift in Sources */,
 				F1F7784D1DEEB9F300B47C12 /* ConstraintViewDSL.swift in Sources */,
 				F1F7761A1DEE845000B47C12 /* EditVideoViewController.swift in Sources */,
 				F1F777081DEE93CD00B47C12 /* SCFilter.m in Sources */,
-				F1F7779D1DEEA19500B47C12 /* NSString+Sankit.m in Sources */,
 				F1F777191DEE93CD00B47C12 /* SCSwipeableFilterView.m in Sources */,
 				F1F778461DEEB9F300B47C12 /* ConstraintMultiplierTarget.swift in Sources */,
 				F1F778321DEEB9F200B47C12 /* Constraint.swift in Sources */,
-				F1F777A81DEEA19500B47C12 /* SFTextField.m in Sources */,
 				F1F777011DEE93CD00B47C12 /* NSURL+SCSaveToCameraRoll.m in Sources */,
 				F1F7761D1DEE847200B47C12 /* SFVideoSlider.swift in Sources */,
-				F1F7779B1DEEA19500B47C12 /* NSNumber+Sankit.m in Sources */,
-				F1F777991DEEA19500B47C12 /* NSMutableArray+Sankit.m in Sources */,
 				F1F7783D1DEEB9F200B47C12 /* ConstraintLayoutGuideDSL.swift in Sources */,
 				F1F778501DEEB9F300B47C12 /* LayoutConstraint.swift in Sources */,
-				F1F777B31DEEA19500B47C12 /* UINavigationController+Sankit.m in Sources */,
-				F1F777B01DEEA19500B47C12 /* UIColor+Sankit.m in Sources */,
-				F1F777B21DEEA19500B47C12 /* UIImage+Sankit.m in Sources */,
 				F1F778331DEEB9F200B47C12 /* ConstraintAttributes.swift in Sources */,
 				F1F778341DEEB9F200B47C12 /* ConstraintConfig.swift in Sources */,
 				F1F777461DEE9B1A00B47C12 /* AppDelegate.swift in Sources */,
@@ -987,29 +826,22 @@
 				F1F7770B1DEE93CD00B47C12 /* SCImageView.m in Sources */,
 				F1F778521DEEB9F300B47C12 /* UILayoutSupport+Extensions.swift in Sources */,
 				F1F778421DEEB9F300B47C12 /* ConstraintMakerExtendable.swift in Sources */,
+				F13FC0091E486410008F88A4 /* UIButton+Sankit.m in Sources */,
 				F1F778451DEEB9F300B47C12 /* ConstraintMakerRelatable.swift in Sources */,
 				F1F777131DEE93CD00B47C12 /* SCRecorderTools.m in Sources */,
-				F1F777AE1DEEA19500B47C12 /* UIApplication+Sankit.m in Sources */,
-				F1F777AD1DEEA19500B47C12 /* UIAlertController+Sankit.m in Sources */,
+				F13FC00C1E486410008F88A4 /* UIView+Sankit.m in Sources */,
 				F1F777181DEE93CD00B47C12 /* SCSaveToCameraRollOperation.m in Sources */,
 				F1F777161DEE93CD00B47C12 /* SCRecordSessionSegment.m in Sources */,
-				F1F777A21DEEA19500B47C12 /* SankitFactory.m in Sources */,
-				F1F777A01DEEA19500B47C12 /* SanIcon.m in Sources */,
-				F1F7779C1DEEA19500B47C12 /* NSObject+Sankit.m in Sources */,
 				F1F777411DEE93CD00B47C12 /* SVProgressHUD.m in Sources */,
 				F1F7770F1DEE93CD00B47C12 /* SCPlayer.m in Sources */,
-				F1F777A41DEEA19500B47C12 /* SFCache.m in Sources */,
 				F1F7771D1DEE93CD00B47C12 /* UIImage+SCSaveToCameraRoll.m in Sources */,
 				F1F7771B1DEE93CD00B47C12 /* SCVideoPlayerView.m in Sources */,
 				F1F778411DEEB9F300B47C12 /* ConstraintMakerEditable.swift in Sources */,
 				F1F7783F1DEEB9F300B47C12 /* ConstraintLayoutSupportDSL.swift in Sources */,
 				F1F7771A1DEE93CD00B47C12 /* SCVideoConfiguration.m in Sources */,
-				F1F777A51DEEA19500B47C12 /* SFKeyChainStore.m in Sources */,
 				F14E76B91E0914340028D9B8 /* Config.swift in Sources */,
-				F1F7779A1DEEA19500B47C12 /* NSMutableDictionary+Sankit.m in Sources */,
 				F1F777051DEE93CD00B47C12 /* SCContext.m in Sources */,
 				F1F7771C1DEE93CD00B47C12 /* SCWeakSelectorTarget.m in Sources */,
-				F1F777971DEEA19500B47C12 /* NSDate+Sankit.m in Sources */,
 				F1F778381DEEB9F200B47C12 /* ConstraintInsets.swift in Sources */,
 				F1F778361DEEB9F200B47C12 /* ConstraintDescription.swift in Sources */,
 			);

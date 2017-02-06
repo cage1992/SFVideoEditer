@@ -25,7 +25,7 @@
 
 #import "UIView+Sankit.h"
 #import "UIColor+Sankit.h"
-#import "SFMacro.h"
+//#import "SFMacro.h"
 
 @implementation UIView (Sankit)
 
@@ -719,12 +719,5 @@
     self.clipsToBounds = YES;
 }
 
-- (void)addBackgroundColor:(UIColor *)color withHeight:(CGFloat)height
-{
-    UIView *black = SVIEW(0, 0, self.width, height);
-    black.backgroundColor = color;
-
-    [self addSubview:black];
-}
 
 @end
